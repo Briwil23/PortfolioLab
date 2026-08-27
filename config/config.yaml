@@ -1,4 +1,6 @@
 project_name: "PortfolioLab"
+
+# Milestone 1: In-sample analysis
 start_date: "2015-01-01"
 end_date: null
 trading_days_per_year: 252
@@ -16,3 +18,11 @@ asset_universe:
   - "LQD"
   - "GLD"
   - "VNQ"
+
+# Milestone 2: Walk-forward out-of-sample backtesting
+backtest:
+  enabled: true
+  lookback_years: 3
+  rebalance_frequency: "monthly"
+  minimum_training_observations: 500
+  holdout_start_date: "2018-01-01"  # Earliest rebalance date to allow 3-year lookback from 2015
