@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+.ipynb_checkpoints/
+*.log
+
+# Large regenerable data files (not committed)
+data/raw/
+data/processed/prices.csv
+data/processed/daily_returns.csv
+data/processed/covariance_matrix.csv
+data/processed/expected_returns.csv
+
+# Sample outputs can be committed for demonstration
+# results/performance/*.csv
+# results/figures/*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials and secrets (never commit)
+.env
+secrets.yaml
+config/secrets.yaml
+*.key
+*.pem
+
