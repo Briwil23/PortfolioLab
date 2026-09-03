@@ -1,0 +1,202 @@
+rebalance_date,training_start,training_end,holding_start,holding_end,strategy,optimization_success,optimization_message,n_training_observations
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Equal Weight,True,Equal weight portfolio,756
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Minimum Variance,True,Optimization succeeded (status: 0),756
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Equal Weight,True,Equal weight portfolio,756
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Minimum Variance,True,Optimization succeeded (status: 0),756
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Equal Weight,True,Equal weight portfolio,755
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Equal Weight,True,Equal weight portfolio,757
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Minimum Variance,True,Optimization succeeded (status: 0),757
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),757
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Equal Weight,True,Equal weight portfolio,755
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Equal Weight,True,Equal weight portfolio,755
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Equal Weight,True,Equal weight portfolio,756
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Equal Weight,True,Equal weight portfolio,756
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Minimum Variance,True,Optimization succeeded (status: 0),756
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Equal Weight,True,Equal weight portfolio,756
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Equal Weight,True,Equal weight portfolio,755
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Equal Weight,True,Equal weight portfolio,754
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Equal Weight,True,Equal weight portfolio,754
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Equal Weight,True,Equal weight portfolio,755
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Equal Weight,True,Equal weight portfolio,754
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Equal Weight,True,Equal weight portfolio,756
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Equal Weight,True,Equal weight portfolio,754
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Equal Weight,True,Equal weight portfolio,756
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Equal Weight,True,Equal weight portfolio,754
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Equal Weight,True,Equal weight portfolio,754
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Equal Weight,True,Equal weight portfolio,754
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Equal Weight,True,Equal weight portfolio,755
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Equal Weight,True,Equal weight portfolio,754
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Equal Weight,True,Equal weight portfolio,754
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Equal Weight,True,Equal weight portfolio,754
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Equal Weight,True,Equal weight portfolio,756
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Equal Weight,True,Equal weight portfolio,754
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Equal Weight,True,Equal weight portfolio,755
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Equal Weight,True,Equal weight portfolio,754
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Equal Weight,True,Equal weight portfolio,756
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Equal Weight,True,Equal weight portfolio,754
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Equal Weight,True,Equal weight portfolio,754
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Equal Weight,True,Equal weight portfolio,756
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Minimum Variance,True,Optimization succeeded (status: 0),756
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Equal Weight,True,Equal weight portfolio,756
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Equal Weight,True,Equal weight portfolio,758
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Minimum Variance,True,Optimization succeeded (status: 0),758
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),758
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Equal Weight,True,Equal weight portfolio,756
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Minimum Variance,True,Optimization succeeded (status: 0),756
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Equal Weight,True,Equal weight portfolio,757
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Minimum Variance,True,Optimization succeeded (status: 0),757
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),757
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Equal Weight,True,Equal weight portfolio,755
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Equal Weight,True,Equal weight portfolio,756
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Equal Weight,True,Equal weight portfolio,755
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Equal Weight,True,Equal weight portfolio,756
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Equal Weight,True,Equal weight portfolio,755
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Minimum Variance,True,Optimization succeeded (status: 0),755
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Equal Weight,True,Equal weight portfolio,755
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Minimum Variance,True,Optimization succeeded (status: 0),755
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Equal Weight,True,Equal weight portfolio,755
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Equal Weight,True,Equal weight portfolio,756
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Equal Weight,True,Equal weight portfolio,754
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Minimum Variance,True,Optimization succeeded (status: 0),754
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Equal Weight,True,Equal weight portfolio,756
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Equal Weight,True,Equal weight portfolio,754
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Equal Weight,True,Equal weight portfolio,756
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Equal Weight,True,Equal weight portfolio,755
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Minimum Variance,True,Optimization succeeded (status: 0),755
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Equal Weight,True,Equal weight portfolio,756
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Minimum Variance,True,Optimization succeeded (status: 0),756
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),756
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Equal Weight,True,Equal weight portfolio,753
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Minimum Variance,True,Optimization succeeded (status: 0),753
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),753
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Equal Weight,True,Equal weight portfolio,754
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Equal Weight,True,Equal weight portfolio,753
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Minimum Variance,True,Optimization succeeded (status: 0),753
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),753
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Equal Weight,True,Equal weight portfolio,754
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Minimum Variance,True,Optimization succeeded (status: 0),754
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),754
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Equal Weight,True,Equal weight portfolio,753
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Minimum Variance,True,Optimization succeeded (status: 0),753
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Maximum Sharpe,True,Optimization succeeded (status: 0),753
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Equal Weight,True,Equal weight portfolio,755
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Minimum Variance,True,Optimization succeeded (status: 0),755
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),755
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Equal Weight,True,Equal weight portfolio,751
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Minimum Variance,True,Optimization succeeded (status: 0),751
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Equal Weight,True,Equal weight portfolio,752
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Minimum Variance,True,Optimization succeeded (status: 0),752
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),752
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Equal Weight,True,Equal weight portfolio,751
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Minimum Variance,True,Optimization succeeded (status: 0),751
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Equal Weight,True,Equal weight portfolio,753
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Minimum Variance,True,Optimization succeeded (status: 0),753
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Maximum Sharpe,True,Optimization succeeded (status: 0),753
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Equal Weight,True,Equal weight portfolio,751
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Minimum Variance,True,Optimization succeeded (status: 0),751
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Equal Weight,True,Equal weight portfolio,751
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Minimum Variance,True,Optimization succeeded (status: 0),751
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Equal Weight,True,Equal weight portfolio,751
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Minimum Variance,True,Optimization succeeded (status: 0),751
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Equal Weight,True,Equal weight portfolio,753
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Minimum Variance,True,Optimization succeeded (status: 0),753
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Maximum Sharpe,True,Optimization succeeded (status: 0),753
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Equal Weight,True,Equal weight portfolio,751
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Minimum Variance,True,Optimization succeeded (status: 0),751
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Equal Weight,True,Equal weight portfolio,751
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Minimum Variance,True,Optimization succeeded (status: 0),751
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Maximum Sharpe,True,Optimization succeeded (status: 0),751
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Equal Weight,True,Equal weight portfolio,751
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Minimum Variance,True,Optimization succeeded (status: 0),751
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Maximum Sharpe,True,Optimization succeeded (status: 0),751

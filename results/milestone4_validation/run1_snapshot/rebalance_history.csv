@@ -1,0 +1,470 @@
+rebalance_date,training_start,training_end,holding_start,holding_end,strategy,solver_success,fallback_used,solver_message,objective_value,risk_contribution_dispersion,optimization_success,optimization_message,turnover
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0
+2018-02-01,2015-02-01,2018-01-31,2018-02-01,2018-02-28,Equal Risk Contribution,True,False,Optimization terminated successfully,1.4530830503824534e-15,1.4530830497574168e-15,True,Optimization terminated successfully,0.0
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.03542139788636511
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0794294892742284
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06052373517869784
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.009968536502528578
+2018-03-01,2015-03-01,2018-02-28,2018-03-01,2018-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,1.9977100548036626e-13,1.9977100547329153e-13,True,Optimization terminated successfully,0.012198542312537412
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05715954298580286
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.2324349757953837
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.027010350729730754
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0101962603081754
+2018-05-01,2015-05-01,2018-04-30,2018-05-01,2018-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,4.5261143238355905e-15,4.526114325071006e-15,True,Optimization terminated successfully,0.012771207714928241
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.023426511162257295
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.21871700143383374
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05484481058894809
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0027857199517196743
+2018-06-01,2015-06-01,2018-05-31,2018-06-01,2018-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,8.226901357265413e-15,8.226901356066905e-15,True,Optimization terminated successfully,0.00565928970515988
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.016090277882317972
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.30940188604359686
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.053589666310524774
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.00852530048006481
+2018-08-01,2015-08-01,2018-07-31,2018-08-01,2018-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,2.956658468417042e-13,2.956658468346979e-13,True,Optimization terminated successfully,0.00812085715990904
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05556763659789068
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.12074438783500732
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.11570443234738997
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.008506627042074482
+2018-10-01,2015-10-01,2018-09-30,2018-10-01,2018-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.3720437148638045e-13,1.3720437146647651e-13,True,Optimization terminated successfully,0.013199168020823975
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.02277628545461684
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.07415948310766869
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,2.258158014434127e-14
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.007020404791669651
+2018-11-01,2015-11-01,2018-10-31,2018-11-01,2019-01-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.3894423073188077e-15,2.389442306797769e-15,True,Optimization terminated successfully,0.00794898211191742
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05526332284830261
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.20484025470494482
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.07931771409895501
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.010865860741361436
+2019-02-01,2016-02-01,2019-01-31,2019-02-01,2019-02-28,Equal Risk Contribution,True,False,Optimization terminated successfully,2.975939143122878e-13,2.9759391431074055e-13,True,Optimization terminated successfully,0.013207958307129126
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.008409245360724788
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1685164072796334
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.018814848028970876
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.003136643587866108
+2019-03-01,2016-02-29,2019-02-28,2019-03-01,2019-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.3040630931662544e-14,2.3040630932965515e-14,True,Optimization terminated successfully,0.0029503808897397253
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.026396897545508134
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.2464850927795489
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0059259986899791615
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0022559633088614847
+2019-04-01,2016-03-31,2019-03-31,2019-04-01,2019-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,4.232641946108949e-14,4.232641946044479e-14,True,Optimization terminated successfully,0.00482701818350002
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.004408128307074956
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.03516344701930395
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05995581195182595
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.002850497897527539
+2019-05-01,2016-04-30,2019-04-30,2019-05-01,2019-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,1.7786769334612528e-14,1.778676933663088e-14,True,Optimization terminated successfully,0.0017993424751402698
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.007616592203804302
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.199708758651778
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.016411509620760288
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.010932406340406237
+2019-07-01,2016-06-30,2019-06-30,2019-07-01,2019-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.798551411240153e-13,2.7985514109972736e-13,True,Optimization terminated successfully,0.0042309412406
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01134052578024347
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.049676308365915356
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.021938406181163578
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0025942854726951035
+2019-08-01,2016-07-31,2019-07-31,2019-08-01,2019-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,3.095409424098063e-14,3.095409424578532e-14,True,Optimization terminated successfully,0.0025448800855842058
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05773578805145012
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.2798334882633502
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.045015885843027126
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.007388815622313017
+2019-10-01,2016-09-30,2019-09-30,2019-10-01,2019-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.3828234462106484e-13,1.3828234462945234e-13,True,Optimization terminated successfully,0.007422083138428254
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01897430533617561
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06752609440032346
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.012895980117594666
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0036119312854380747
+2019-11-01,2016-10-31,2019-10-31,2019-11-01,2020-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.7016708389354883e-14,1.701670839091931e-14,True,Optimization terminated successfully,0.004968101091582449
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.23270703497322143
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.5750558753266459
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.5770525783848413
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.08892771134209464
+2020-04-01,2017-04-01,2020-03-31,2020-04-01,2020-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0007923971531011069,0.0007923971531011074,True,Optimization terminated successfully,0.10930659554103933
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.029525849013922894
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0023942509307644383
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,9.370159924307788e-16
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.010892423022513125
+2020-05-01,2017-05-01,2020-04-30,2020-05-01,2020-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0010883423851258747,0.0010883423851258736,True,Optimization terminated successfully,0.01077744719885913
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.009776225595079888
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0013555827892855338
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,3.575142321846845e-05
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.003428356875764857
+2020-06-01,2017-06-01,2020-05-31,2020-06-01,2020-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001122683208367618,0.0011226832083676196,True,Optimization terminated successfully,0.0020679086816391343
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.014903827893864182
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.025103210490399347
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01414789277442217
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004237640873447791
+2020-07-01,2017-07-01,2020-06-30,2020-07-01,2020-08-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001171390146431658,0.0011713901464316574,True,Optimization terminated successfully,0.0045289286904385655
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.03985272120834414
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.020566689484275716
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.005715121918152666
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0059819373357030935
+2020-09-01,2017-09-01,2020-08-31,2020-09-01,2020-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0013250058417903347,0.0013250058417903345,True,Optimization terminated successfully,0.006519132561777278
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01957275880331372
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.022683908361512115
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.007944132301270087
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.00353479502068009
+2020-10-01,2017-10-01,2020-09-30,2020-10-01,2020-11-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0014171178178524226,0.0014171178178524224,True,Optimization terminated successfully,0.0031031418490138213
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.030609036901952276
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04167389631279865
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.03057968546073705
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0034418723645281736
+2020-12-01,2017-12-01,2020-11-30,2020-12-01,2021-01-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001445839460182661,0.0014458394601826604,True,Optimization terminated successfully,0.0023297655870131023
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.017384892896745503
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.007099457914230865
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.019498120891547663
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.002684108351057847
+2021-02-01,2018-02-01,2021-01-31,2021-02-01,2021-02-28,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001495739647219063,0.001495739647219063,True,Optimization terminated successfully,0.0026817298213216156
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.017777265218387957
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.023614585377739715
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0397993422560142
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004308220801223804
+2021-03-01,2018-03-01,2021-02-28,2021-03-01,2021-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001261697099359342,0.0012616970993593421,True,Optimization terminated successfully,0.003950375107538647
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.013584911652274167
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05947206268029474
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.033051968597361016
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0014275901706571406
+2021-04-01,2018-04-01,2021-03-31,2021-04-01,2021-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0011178343304145716,0.0011178343304145718,True,Optimization terminated successfully,0.0032057309830695567
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01821563036983701
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.10078386593415387
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.15501884498723903
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.001791781084188395
+2021-06-01,2018-06-01,2021-05-31,2021-06-01,2021-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0011043680160610335,0.0011043680160610335,True,Optimization terminated successfully,0.0019627809751422837
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0057720985522159
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06148873483207969
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.011070437166495002
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0015385185200909035
+2021-07-01,2018-07-01,2021-06-30,2021-07-01,2021-08-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.001037071070682258,0.001037071070682258,True,Optimization terminated successfully,0.0011985584844197185
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.00888274260248011
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0362210907450192
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.002668880673288687
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0028646755191226517
+2021-09-01,2018-09-01,2021-08-31,2021-09-01,2021-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0009525300742392101,0.0009525300742392102,True,Optimization terminated successfully,0.00198438022449772
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.010270888562017633
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01141299081815401
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,4.0918004056280716e-16
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0012872123336033145
+2021-10-01,2018-10-01,2021-09-30,2021-10-01,2021-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0009352813500232074,0.0009352813500232063,True,Optimization terminated successfully,0.0017762281162213532
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006198607906516803
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06990358820538278
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.013224237531728203
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.002941524353643501
+2021-11-01,2018-11-01,2021-10-31,2021-11-01,2021-11-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0008853345662659782,0.0008853345662659789,True,Optimization terminated successfully,0.0031042398779309935
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006304755322423234
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0037997444380752617
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.008556956685900176
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.00457168162428814
+2021-12-01,2018-12-01,2021-11-30,2021-12-01,2022-01-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0007982287909205219,0.0007982287909205219,True,Optimization terminated successfully,0.003483843911872144
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006655179051168666
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.10177809525344328
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.03297642853728856
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0037599452502802486
+2022-02-01,2019-02-01,2022-01-31,2022-02-01,2022-02-28,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0006656062807781106,0.000665606280778111,True,Optimization terminated successfully,0.004392425409279189
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.018307263360872905
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1579057347139472
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04335045769603616
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0024000226137775443
+2022-03-01,2019-03-01,2022-02-28,2022-03-01,2022-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.0005587311688518251,0.0005587311688518258,True,Optimization terminated successfully,0.0034412475446940274
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.015087391674397233
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.09421299091460084
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.05110777375466519
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004867820308731501
+2022-04-01,2019-04-01,2022-03-31,2022-04-01,2022-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.00040352444936022014,0.00040352444936022025,True,Optimization terminated successfully,0.006711091853377284
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04158574222421575
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.170699320051789
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.07600168488390943
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004689293270272142
+2022-06-01,2019-06-01,2022-05-31,2022-06-01,2022-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,0.00027936485687103343,0.0002793648568710334,True,Optimization terminated successfully,0.007560389379012263
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.028079402264027217
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06990897026885272
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04170448868439514
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004639165688219617
+2022-07-01,2019-07-01,2022-06-30,2022-07-01,2022-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,0.00011425776641258867,0.00011425776641258876,True,Optimization terminated successfully,0.004464370808300554
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006600251024183374
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.015342502517790511
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,6.431270065772884e-15
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.003296567505673448
+2022-08-01,2019-08-01,2022-07-31,2022-08-01,2022-08-31,Equal Risk Contribution,True,False,Optimization terminated successfully,6.645359180866636e-05,6.645359180866667e-05,True,Optimization terminated successfully,0.001788767838932885
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01800721070052875
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.09552992957369272
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.10929667058071899
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0032425371799963895
+2022-09-01,2019-09-01,2022-08-31,2022-09-01,2022-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.171014869540733e-05,2.171014869540733e-05,True,Optimization terminated successfully,0.0033687359940408265
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04799797488170564
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01610638531297994
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.17819401964318587
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.004984602400956148
+2022-11-01,2019-11-01,2022-10-31,2022-11-01,2022-11-30,Equal Risk Contribution,True,False,Optimization terminated successfully,3.0236696188334934e-15,3.023669617478627e-15,True,Optimization terminated successfully,0.008446240842541645
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.021678199505593253
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.6484691494555401e-15
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,9.200339387703826e-16
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0015448264812477908
+2022-12-01,2019-12-01,2022-11-30,2022-12-01,2023-01-31,Equal Risk Contribution,True,False,Optimization terminated successfully,3.2828470518175515e-15,3.2828470509244774e-15,True,Optimization terminated successfully,0.005248596933440139
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.02526347541578099
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,5.933991617167497e-16
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,8.941764645787042e-16
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.00396444842698563
+2023-02-01,2020-02-01,2023-01-31,2023-02-01,2023-02-28,Equal Risk Contribution,True,False,Optimization terminated successfully,2.9152913202818407e-13,2.915291320336832e-13,True,Optimization terminated successfully,0.007664589435133942
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.011353440748740543
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.1280266456386308e-15
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.0915397613725928e-15
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.002536252338434665
+2023-03-01,2020-02-29,2023-02-28,2023-03-01,2023-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,1.4511802841401333e-15,1.4511802845286e-15,True,Optimization terminated successfully,0.005701242233532529
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.07659744526177562
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.3000000000000003
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.13936660018682856
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.04912253913483918
+2023-05-01,2020-04-30,2023-04-30,2023-05-01,2023-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,3.348890598340362e-14,3.348890598543652e-14,True,Optimization terminated successfully,0.07367624758934435
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.007566920451040107
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.18272008624265967
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,5.726106831584693e-16
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0063451601155726685
+2023-06-01,2020-05-31,2023-05-31,2023-06-01,2023-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,9.15684308752437e-14,9.156843087622565e-14,True,Optimization terminated successfully,0.0065004219501900995
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.02255948865816636
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.28272008624265943
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0766305059485707
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.010175422183386396
+2023-08-01,2020-07-31,2023-07-31,2023-08-01,2023-08-31,Equal Risk Contribution,True,False,Optimization terminated successfully,7.156833092912407e-14,7.156833093968912e-14,True,Optimization terminated successfully,0.014022385047091749
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.02181449496457442
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.002590738091663149
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.043935501150639766
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.005308727025835302
+2023-09-01,2020-08-31,2023-08-31,2023-09-01,2023-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.043532424812275e-14,2.0435324248469698e-14,True,Optimization terminated successfully,0.006442150567643891
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.017673170908119453
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.20461445570430722
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,8.758834947607956e-16
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.00945466597035437
+2023-11-01,2020-10-31,2023-10-31,2023-11-01,2023-11-30,Equal Risk Contribution,True,False,Optimization terminated successfully,1.3762291076056843e-15,1.3762291066126534e-15,True,Optimization terminated successfully,0.014563092217272651
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01936939784277465
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.14044303946072578
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.12056600709920985
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.005629162528743598
+2023-12-01,2020-11-30,2023-11-30,2023-12-01,2024-01-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.6361678589023195e-15,1.6361678587718076e-15,True,Optimization terminated successfully,0.007820593997709797
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.020094304993544608
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.6780739124644397e-15
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,4.683039400076552e-16
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.005845629016512109
+2024-02-01,2021-01-31,2024-01-31,2024-02-01,2024-02-29,Equal Risk Contribution,True,False,Optimization terminated successfully,2.977642995330915e-13,2.9776429953661563e-13,True,Optimization terminated successfully,0.006885505464403283
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.019015934672219452
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.4753380551160278e-15
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,4.954931800130571e-16
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0021644606535503666
+2024-03-01,2021-03-01,2024-02-29,2024-03-01,2024-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.4783055262089703e-13,1.4783055262012032e-13,True,Optimization terminated successfully,0.002840355322771826
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.014680904779344767
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,7.714171743672514e-16
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,5.499073418846478e-16
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.003300016395516678
+2024-04-01,2021-04-01,2024-03-31,2024-04-01,2024-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,4.3459189751437735e-14,4.345918975364406e-14,True,Optimization terminated successfully,0.003802935194599417
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0018720721554319308
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,6.591949208711864e-16
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,7.424616477180734e-16
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0019067051987887856
+2024-05-01,2021-05-01,2024-04-30,2024-05-01,2024-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,3.627641440711605e-14,3.6276414410184144e-14,True,Optimization terminated successfully,0.002088274762817602
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0062204429868437695
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,2.1024848528838886e-15
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,8.673617379884036e-16
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.003306475311413308
+2024-07-01,2021-07-01,2024-06-30,2024-07-01,2024-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.9470339831291575e-13,2.9470339830697776e-13,True,Optimization terminated successfully,0.004286155789544603
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.002300284557943168
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,2.384523180335928e-15
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,6.591949208711867e-16
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0020246392157778764
+2024-08-01,2021-08-01,2024-07-31,2024-08-01,2024-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,9.93914875197599e-14,9.939148752117167e-14,True,Optimization terminated successfully,0.002327722085361382
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.01288199490590568
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,1.5166628011136838e-15
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,5.759281940243e-16
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0031519986485823645
+2024-10-01,2021-10-01,2024-09-30,2024-10-01,2024-10-31,Equal Risk Contribution,True,False,Optimization terminated successfully,3.723311651531025e-13,3.7233116514297686e-13,True,Optimization terminated successfully,0.005106475304628197
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0012568207435612142
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.004509761450421089
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,4.85722573273506e-16
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0005562054423981985
+2024-11-01,2021-11-01,2024-10-31,2024-11-01,2025-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,4.655557865449967e-13,4.655557865488376e-13,True,Optimization terminated successfully,0.0004818434352500192
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.012442635626286497
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1407297302704667
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1578375992635021
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.006176766375939065
+2025-04-01,2022-04-01,2025-03-31,2025-04-01,2025-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,4.0062487478671564e-13,4.006248747814131e-13,True,Optimization terminated successfully,0.011522689689121034
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.018523828689991105
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.3231631739931903
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1554136546655505
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.01335392688104483
+2025-05-01,2022-05-01,2025-04-30,2025-05-01,2025-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,3.0171228842059427e-15,3.0171228846755438e-15,True,Optimization terminated successfully,0.017324436327843737
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.028083134727558468
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.17703114884293555
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.02547559921914255
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.007725174023544022
+2025-07-01,2022-07-01,2025-06-30,2025-07-01,2025-07-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.6398686943124665e-13,1.6398686942580404e-13,True,Optimization terminated successfully,0.009504668676473663
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006890790240036553
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.032105154423050446
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.006909689192438884
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0020120106460360526
+2025-08-01,2022-08-01,2025-07-31,2025-08-01,2025-09-30,Equal Risk Contribution,True,False,Optimization terminated successfully,2.2857879456666545e-15,2.285787944681683e-15,True,Optimization terminated successfully,0.0018184091208553674
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.023687286370249812
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.1863478147887823
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06222957619828749
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.006689909662316605
+2025-10-01,2022-10-01,2025-09-30,2025-10-01,2025-11-30,Equal Risk Contribution,True,False,Optimization terminated successfully,2.373892948240328e-14,2.373892947875648e-14,True,Optimization terminated successfully,0.00775096134445245
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04142039916408414
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.2781680681788462
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,7.07874936063602e-15
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.010181560159771313
+2025-12-01,2022-12-01,2025-11-30,2025-12-01,2026-03-31,Equal Risk Contribution,True,False,Optimization terminated successfully,3.2078964673937064e-13,3.207896467645892e-13,True,Optimization terminated successfully,0.01336619084634201
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.06632749060700618
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.20759808414688824
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.032108547001685826
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.028258217165456997
+2026-04-01,2023-04-01,2026-03-31,2026-04-01,2026-04-30,Equal Risk Contribution,True,False,Optimization terminated successfully,4.503338381740577e-13,4.5033383816570783e-13,True,Optimization terminated successfully,0.033042325219462126
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.008282710954827537
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.0937397554672797
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.038374353649155354
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.0047724509839890406
+2026-05-01,2023-05-01,2026-04-30,2026-05-01,2026-05-31,Equal Risk Contribution,True,False,Optimization terminated successfully,2.01677722082776e-15,2.0167772191314288e-15,True,Optimization terminated successfully,0.003989439312759854
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.010052445207669207
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04420088056140338
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.032194813947285246
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.005323106235897344
+2026-06-01,2023-06-01,2026-05-31,2026-06-01,2026-06-30,Equal Risk Contribution,True,False,Optimization terminated successfully,6.685467413922732e-14,6.685467413583771e-14,True,Optimization terminated successfully,0.004889049147859186
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.016202690641540618
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.017870371719164876
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.04047613233229722
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.007464279956735688
+2026-07-01,2023-07-01,2026-06-30,2026-07-01,2026-08-31,Equal Risk Contribution,True,False,Optimization terminated successfully,1.0253726395284664e-13,1.0253726395469057e-13,True,Optimization terminated successfully,0.008428562084860126
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,SPY,True,False,SPY benchmark,,,True,SPY benchmark,0.0
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Equal Weight,True,False,Equal weight portfolio,,,True,Equal weight portfolio,0.0
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Minimum Variance,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.015720269657770205
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Maximum Sharpe,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.10259761216490787
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Combined Robust Max Sharpe λ=0.50 γ=0.10,True,False,Optimization terminated successfully,,,True,Optimization terminated successfully,0.018907025277046647
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Inverse Volatility,True,False,Inverse-volatility portfolio constructed successfully.,,,True,Inverse-volatility portfolio constructed successfully.,0.01032275934854809
+2026-09-01,2023-09-01,2026-08-31,2026-09-01,,Equal Risk Contribution,True,False,Optimization terminated successfully,1.3287480590949366e-14,1.3287480591923492e-14,True,Optimization terminated successfully,0.010695279972573572

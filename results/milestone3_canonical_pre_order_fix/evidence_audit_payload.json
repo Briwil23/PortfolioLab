@@ -1,0 +1,1036 @@
+{
+  "verification": {
+    "canonical_hashes_validated": true,
+    "live_data_calls": 0,
+    "oos_start": "2018-02-01",
+    "oos_end": "2026-09-02",
+    "oos_observations": 2158,
+    "rebalance_count": 67,
+    "optimizer_failures": 0,
+    "optimizer_fallbacks": 0,
+    "lookback_validation_pass": true,
+    "lookback_validation_message": ""
+  },
+  "gross_table": [
+    {
+      "strategy": "SPY",
+      "cagr": 0.140891100819541,
+      "annualized_volatility": 0.1912801049595674,
+      "sharpe": 0.6320108452737143,
+      "sortino": 0.5948069084096242,
+      "max_drawdown": -0.3371727919657733,
+      "calmar": 0.4178602312426294,
+      "cumulative_return": 2.0917914273218674,
+      "terminal_wealth": 3.0917914273218674
+    },
+    {
+      "strategy": "Equal Weight",
+      "cagr": 0.0857944648500961,
+      "annualized_volatility": 0.1250860992639823,
+      "sharpe": 0.5259934176318279,
+      "sortino": 0.4951359061513661,
+      "max_drawdown": -0.2551941684939265,
+      "calmar": 0.3361928893455023,
+      "cumulative_return": 1.02359915384352,
+      "terminal_wealth": 2.02359915384352
+    },
+    {
+      "strategy": "Minimum Variance",
+      "cagr": 0.0574712889087398,
+      "annualized_volatility": 0.0804857451286806,
+      "sharpe": 0.4655642915255461,
+      "sortino": 0.4472032261421346,
+      "max_drawdown": -0.2219957591862223,
+      "calmar": 0.2588846251811944,
+      "cumulative_return": 0.6137038434096023,
+      "terminal_wealth": 1.6137038434096025
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "cagr": 0.0970304099740695,
+      "annualized_volatility": 0.1315886406635739,
+      "sharpe": 0.5853879908297653,
+      "sortino": 0.5536507566480442,
+      "max_drawdown": -0.2557997296251342,
+      "calmar": 0.3793217847269201,
+      "cumulative_return": 1.2101015612944286,
+      "terminal_wealth": 2.2101015612944286
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.25",
+      "cagr": 0.0898639867722541,
+      "annualized_volatility": 0.1194447147905629,
+      "sharpe": 0.5849064723772439,
+      "sortino": 0.5582398806922173,
+      "max_drawdown": -0.2388531755233254,
+      "calmar": 0.3762310740703483,
+      "cumulative_return": 1.08947612112574,
+      "terminal_wealth": 2.08947612112574
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cagr": 0.0885985798342523,
+      "annualized_volatility": 0.1082296171469719,
+      "sharpe": 0.633824470995753,
+      "sortino": 0.6108587631526753,
+      "max_drawdown": -0.2232372975831256,
+      "calmar": 0.3968807219647576,
+      "cumulative_return": 1.068791862920159,
+      "terminal_wealth": 2.068791862920159
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.75",
+      "cagr": 0.0804505090430525,
+      "annualized_volatility": 0.0973686285231083,
+      "sharpe": 0.6208417429717196,
+      "sortino": 0.6043055661778161,
+      "max_drawdown": -0.2221429865666405,
+      "calmar": 0.3621564213503458,
+      "cumulative_return": 0.9398810914109696,
+      "terminal_wealth": 1.9398810914109696
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.05",
+      "cagr": 0.0976691227727288,
+      "annualized_volatility": 0.1319659712229685,
+      "sharpe": 0.5885541708437837,
+      "sortino": 0.5582811380773415,
+      "max_drawdown": -0.2545763234576816,
+      "calmar": 0.3836535992278342,
+      "cumulative_return": 1.2211450548255391,
+      "terminal_wealth": 2.221145054825539
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cagr": 0.1015099733871163,
+      "annualized_volatility": 0.1311213249873448,
+      "sharpe": 0.6216378105924666,
+      "sortino": 0.5903829278354664,
+      "max_drawdown": -0.2533306639837149,
+      "calmar": 0.4007014855242386,
+      "cumulative_return": 1.288588013649219,
+      "terminal_wealth": 2.288588013649219
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.25",
+      "cagr": 0.1131114831413957,
+      "annualized_volatility": 0.1298376863814057,
+      "sharpe": 0.717137571813128,
+      "sortino": 0.6848035499099888,
+      "max_drawdown": -0.2475757466351168,
+      "calmar": 0.4568762678846009,
+      "cumulative_return": 1.503418583682849,
+      "terminal_wealth": 2.503418583682849
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cagr": 0.0967766399681666,
+      "annualized_volatility": 0.1088200444626143,
+      "sharpe": 0.7055376640150487,
+      "sortino": 0.6849383088892955,
+      "max_drawdown": -0.2236576194670849,
+      "calmar": 0.4326999464572634,
+      "cumulative_return": 1.2057272986593102,
+      "terminal_wealth": 2.20572729865931
+    }
+  ],
+  "attribution": [
+    {
+      "mechanism": "Shrinkage (\u03bb=0.50)",
+      "metric": "cagr",
+      "base_max_sharpe": 0.0970304099740695,
+      "variant": 0.0885985798342523,
+      "absolute_change": -0.0084318301398172,
+      "pct_change_vs_base": -8.689884070437847
+    },
+    {
+      "mechanism": "Shrinkage (\u03bb=0.50)",
+      "metric": "annualized_volatility",
+      "base_max_sharpe": 0.1315886406635739,
+      "variant": 0.1082296171469719,
+      "absolute_change": -0.023359023516602004,
+      "pct_change_vs_base": -17.751550132904597
+    },
+    {
+      "mechanism": "Shrinkage (\u03bb=0.50)",
+      "metric": "sharpe",
+      "base_max_sharpe": 0.5853879908297653,
+      "variant": 0.633824470995753,
+      "absolute_change": 0.04843648016598767,
+      "pct_change_vs_base": 8.274252448761512
+    },
+    {
+      "mechanism": "Shrinkage (\u03bb=0.50)",
+      "metric": "sortino",
+      "base_max_sharpe": 0.5536507566480442,
+      "variant": 0.6108587631526753,
+      "absolute_change": 0.05720800650463109,
+      "pct_change_vs_base": 10.33286883792669
+    },
+    {
+      "mechanism": "Shrinkage (\u03bb=0.50)",
+      "metric": "max_drawdown",
+      "base_max_sharpe": -0.2557997296251342,
+      "variant": -0.2232372975831256,
+      "absolute_change": 0.03256243204200859,
+      "pct_change_vs_base": -12.729658506569857
+    },
+    {
+      "mechanism": "Turnover penalty (\u03b3=0.10)",
+      "metric": "cagr",
+      "base_max_sharpe": 0.0970304099740695,
+      "variant": 0.1015099733871163,
+      "absolute_change": 0.004479563413046797,
+      "pct_change_vs_base": 4.616659266145448
+    },
+    {
+      "mechanism": "Turnover penalty (\u03b3=0.10)",
+      "metric": "annualized_volatility",
+      "base_max_sharpe": 0.1315886406635739,
+      "variant": 0.1311213249873448,
+      "absolute_change": -0.0004673156762290964,
+      "pct_change_vs_base": -0.3551337515704407
+    },
+    {
+      "mechanism": "Turnover penalty (\u03b3=0.10)",
+      "metric": "sharpe",
+      "base_max_sharpe": 0.5853879908297653,
+      "variant": 0.6216378105924666,
+      "absolute_change": 0.03624981976270125,
+      "pct_change_vs_base": 6.192443359030735
+    },
+    {
+      "mechanism": "Turnover penalty (\u03b3=0.10)",
+      "metric": "sortino",
+      "base_max_sharpe": 0.5536507566480442,
+      "variant": 0.5903829278354664,
+      "absolute_change": 0.036732171187422225,
+      "pct_change_vs_base": 6.63453824389386
+    },
+    {
+      "mechanism": "Turnover penalty (\u03b3=0.10)",
+      "metric": "max_drawdown",
+      "base_max_sharpe": -0.2557997296251342,
+      "variant": -0.2533306639837149,
+      "absolute_change": 0.002469065641419299,
+      "pct_change_vs_base": -0.9652338745774403
+    },
+    {
+      "mechanism": "Combined (\u03bb=0.50 \u03b3=0.10)",
+      "metric": "cagr",
+      "base_max_sharpe": 0.0970304099740695,
+      "variant": 0.0967766399681666,
+      "absolute_change": -0.00025377000590290355,
+      "pct_change_vs_base": -0.2615365697936567
+    },
+    {
+      "mechanism": "Combined (\u03bb=0.50 \u03b3=0.10)",
+      "metric": "annualized_volatility",
+      "base_max_sharpe": 0.1315886406635739,
+      "variant": 0.1088200444626143,
+      "absolute_change": -0.022768596200959598,
+      "pct_change_vs_base": -17.302858427704965
+    },
+    {
+      "mechanism": "Combined (\u03bb=0.50 \u03b3=0.10)",
+      "metric": "sharpe",
+      "base_max_sharpe": 0.5853879908297653,
+      "variant": 0.7055376640150487,
+      "absolute_change": 0.12014967318528336,
+      "pct_change_vs_base": 20.524792969356227
+    },
+    {
+      "mechanism": "Combined (\u03bb=0.50 \u03b3=0.10)",
+      "metric": "sortino",
+      "base_max_sharpe": 0.5536507566480442,
+      "variant": 0.6849383088892955,
+      "absolute_change": 0.13128755224125133,
+      "pct_change_vs_base": 23.713062912819392
+    },
+    {
+      "mechanism": "Combined (\u03bb=0.50 \u03b3=0.10)",
+      "metric": "max_drawdown",
+      "base_max_sharpe": -0.2557997296251342,
+      "variant": -0.2236576194670849,
+      "absolute_change": 0.0321421101580493,
+      "pct_change_vs_base": -12.565341724618891
+    }
+  ],
+  "net_cost_table": [
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cost_bps": 0.0,
+      "cagr": 0.0967766399681666,
+      "sharpe": 0.7055376640150487,
+      "cumulative_return": 1.2057272986593102,
+      "terminal_wealth": 2.20572729865931,
+      "total_estimated_transaction_cost_drag": 0.0
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cost_bps": 5.0,
+      "cagr": 0.0965860726946574,
+      "sharpe": 0.7037730840469557,
+      "cumulative_return": 1.2024474976740898,
+      "terminal_wealth": 2.2024474976740898,
+      "total_estimated_transaction_cost_drag": 0.0014866850781007
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cost_bps": 10.0,
+      "cagr": 0.0963955206281339,
+      "sharpe": 0.7020077550572464,
+      "cumulative_return": 1.1991722660389814,
+      "terminal_wealth": 2.1991722660389814,
+      "total_estimated_transaction_cost_drag": 0.0029733701562014
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cost_bps": 25.0,
+      "cagr": 0.0958239556351112,
+      "sharpe": 0.696707346819217,
+      "cumulative_return": 1.1893739272543238,
+      "terminal_wealth": 2.189373927254324,
+      "total_estimated_transaction_cost_drag": 0.0074334253905035
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "cost_bps": 0.0,
+      "cagr": 0.0970304099740695,
+      "sharpe": 0.5853879908297653,
+      "cumulative_return": 1.2101015612944286,
+      "terminal_wealth": 2.2101015612944286,
+      "total_estimated_transaction_cost_drag": 0.0
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "cost_bps": 5.0,
+      "cagr": 0.0965956939536833,
+      "sharpe": 0.582086675231867,
+      "cumulative_return": 1.2026129832155532,
+      "terminal_wealth": 2.202612983215553,
+      "total_estimated_transaction_cost_drag": 0.0033959507080592
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "cost_bps": 10.0,
+      "cagr": 0.0961611012897853,
+      "sharpe": 0.5787848021339895,
+      "cumulative_return": 1.1951489402885755,
+      "terminal_wealth": 2.1951489402885755,
+      "total_estimated_transaction_cost_drag": 0.0067919014161184
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "cost_bps": 25.0,
+      "cagr": 0.0948580631857345,
+      "sharpe": 0.5688760873631559,
+      "cumulative_return": 1.1729032465515488,
+      "terminal_wealth": 2.1729032465515488,
+      "total_estimated_transaction_cost_drag": 0.016979753540296
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cost_bps": 0.0,
+      "cagr": 0.0885985798342523,
+      "sharpe": 0.633824470995753,
+      "cumulative_return": 1.068791862920159,
+      "terminal_wealth": 2.068791862920159,
+      "total_estimated_transaction_cost_drag": 0.0
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cost_bps": 5.0,
+      "cagr": 0.0882297832654395,
+      "sharpe": 0.6304204534290629,
+      "cumulative_return": 1.0627976736455769,
+      "terminal_wealth": 2.062797673645577,
+      "total_estimated_transaction_cost_drag": 0.0029031742128373
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cost_bps": 10.0,
+      "cagr": 0.0878610764673175,
+      "sharpe": 0.6270155232317947,
+      "cumulative_return": 1.05682028269544,
+      "terminal_wealth": 2.05682028269544,
+      "total_estimated_transaction_cost_drag": 0.0058063484256746
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cost_bps": 25.0,
+      "cagr": 0.0867554945226649,
+      "sharpe": 0.6167955327733686,
+      "cumulative_return": 1.0389884449172957,
+      "terminal_wealth": 2.0389884449172957,
+      "total_estimated_transaction_cost_drag": 0.0145158710641866
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cost_bps": 0.0,
+      "cagr": 0.1015099733871163,
+      "sharpe": 0.6216378105924666,
+      "cumulative_return": 1.288588013649219,
+      "terminal_wealth": 2.288588013649219,
+      "total_estimated_transaction_cost_drag": 0.0
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cost_bps": 5.0,
+      "cagr": 0.101279683154811,
+      "sharpe": 0.6198766657934116,
+      "cumulative_return": 1.2844938777635155,
+      "terminal_wealth": 2.2844938777635155,
+      "total_estimated_transaction_cost_drag": 0.0017900885417053
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cost_bps": 10.0,
+      "cagr": 0.1010494188495954,
+      "sharpe": 0.6181150299265873,
+      "cumulative_return": 1.280406671942047,
+      "terminal_wealth": 2.280406671942047,
+      "total_estimated_transaction_cost_drag": 0.0035801770834106
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cost_bps": 25.0,
+      "cagr": 0.1003587814525377,
+      "sharpe": 0.6128272371735761,
+      "cumulative_return": 1.2681865236118326,
+      "terminal_wealth": 2.2681865236118326,
+      "total_estimated_transaction_cost_drag": 0.0089504427085266
+    }
+  ],
+  "combined_vs_max_sharpe_net_advantage": [
+    {
+      "cost_bps": 5.0,
+      "combined_minus_max_sharpe_net_cagr": -9.621259025899276e-06,
+      "combined_minus_max_sharpe_net_sharpe": 0.12168640881508874
+    },
+    {
+      "cost_bps": 10.0,
+      "combined_minus_max_sharpe_net_cagr": 0.00023441933834859874,
+      "combined_minus_max_sharpe_net_sharpe": 0.12322295292325691
+    },
+    {
+      "cost_bps": 25.0,
+      "combined_minus_max_sharpe_net_cagr": 0.0009658924493766985,
+      "combined_minus_max_sharpe_net_sharpe": 0.1278312594560611
+    }
+  ],
+  "turnover_table": [
+    {
+      "strategy": "Minimum Variance",
+      "mean_monthly_turnover": 0.0240907249379881,
+      "median_monthly_turnover": 0.0177772545142839,
+      "p95_turnover": 0.0575629180678029,
+      "max_turnover": 0.2327070302370862,
+      "approx_annualized_turnover": 0.2890886992558582,
+      "pct_reduction_vs_max_sharpe": 76.23524736365133
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "mean_monthly_turnover": 0.1013716629271407,
+      "median_monthly_turnover": 0.0675260903355332,
+      "p95_turnover": 0.2948160259013156,
+      "max_turnover": 0.5750558744597043,
+      "approx_annualized_turnover": 1.2164599551256892,
+      "pct_reduction_vs_max_sharpe": NaN
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.25",
+      "mean_monthly_turnover": 0.0959249276969098,
+      "median_monthly_turnover": 0.0746917573590504,
+      "p95_turnover": 0.2583845704518581,
+      "max_turnover": 0.6000000000000227,
+      "approx_annualized_turnover": 1.1510991323629187,
+      "pct_reduction_vs_max_sharpe": 5.37303529699975
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "mean_monthly_turnover": 0.0866619168011143,
+      "median_monthly_turnover": 0.0549113501892717,
+      "p95_turnover": 0.2424364243425225,
+      "max_turnover": 0.5725908882478883,
+      "approx_annualized_turnover": 1.0399430016133715,
+      "pct_reduction_vs_max_sharpe": 14.510708122247983
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.75",
+      "mean_monthly_turnover": 0.0819842854888227,
+      "median_monthly_turnover": 0.044591654647919,
+      "p95_turnover": 0.3113947491938516,
+      "max_turnover": 0.5427760335525625,
+      "approx_annualized_turnover": 0.9838114258658728,
+      "pct_reduction_vs_max_sharpe": 19.125046268849715
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.05",
+      "mean_monthly_turnover": 0.073638647228171,
+      "median_monthly_turnover": 0.0515289524276661,
+      "p95_turnover": 0.2063867005195125,
+      "max_turnover": 0.5831507745067529,
+      "approx_annualized_turnover": 0.8836637667380525,
+      "pct_reduction_vs_max_sharpe": 27.357759454831456
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "mean_monthly_turnover": 0.0534354788568754,
+      "median_monthly_turnover": 0.0204531247715263,
+      "p95_turnover": 0.1546920187915715,
+      "max_turnover": 0.5895232528929685,
+      "approx_annualized_turnover": 0.641225746282505,
+      "pct_reduction_vs_max_sharpe": 47.28755816575555
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.25",
+      "mean_monthly_turnover": 0.0321370904626637,
+      "median_monthly_turnover": 0.0023543268277274,
+      "p95_turnover": 0.1256427210881227,
+      "max_turnover": 0.5087658658151164,
+      "approx_annualized_turnover": 0.3856450855519648,
+      "pct_reduction_vs_max_sharpe": 68.29775744552819
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "mean_monthly_turnover": 0.0443786590477824,
+      "median_monthly_turnover": 0.0194981521850622,
+      "p95_turnover": 0.1552952139178696,
+      "max_turnover": 0.5770525787695734,
+      "approx_annualized_turnover": 0.5325439085733887,
+      "pct_reduction_vs_max_sharpe": 56.221829881908086
+    }
+  ],
+  "turnover_gamma_monotone_check": {
+    "means": {
+      "Turnover-Aware Max Sharpe \u03b3=0.05": 0.073638647228171,
+      "Turnover-Aware Max Sharpe \u03b3=0.10": 0.0534354788568754,
+      "Turnover-Aware Max Sharpe \u03b3=0.25": 0.0321370904626637
+    },
+    "gamma_005_gt_010_gt_025": true
+  },
+  "concentration_table": [
+    {
+      "strategy": "Maximum Sharpe",
+      "mean_hhi": 0.2637956566834207,
+      "median_hhi": 0.2632712759392664,
+      "max_hhi": 0.2800000000000008,
+      "mean_effective_holdings": 3.802906429241642,
+      "median_effective_holdings": 3.7983634805290647,
+      "min_effective_holdings": 3.571428571428561,
+      "average_largest_position": 0.2999999999999954,
+      "maximum_largest_position": 0.300000000000001
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "mean_hhi": 0.2553748898909833,
+      "median_hhi": 0.2608675974781513,
+      "max_hhi": 0.2799999999999999,
+      "mean_effective_holdings": 3.959470761526817,
+      "median_effective_holdings": 3.8333622483863823,
+      "min_effective_holdings": 3.5714285714285725,
+      "average_largest_position": 0.2999999999999977,
+      "maximum_largest_position": 0.3000000000000115
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "mean_hhi": 0.2624696348389453,
+      "median_hhi": 0.2635575084434962,
+      "max_hhi": 0.2800000000000011,
+      "mean_effective_holdings": 3.8233876452614166,
+      "median_effective_holdings": 3.794238327360682,
+      "min_effective_holdings": 3.571428571428558,
+      "average_largest_position": 0.299999999999999,
+      "maximum_largest_position": 0.3000000000000494
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "mean_hhi": 0.2513515582719601,
+      "median_hhi": 0.2588217443458953,
+      "max_hhi": 0.2799999999999998,
+      "mean_effective_holdings": 4.021201190748115,
+      "median_effective_holdings": 3.8636630107228433,
+      "min_effective_holdings": 3.571428571428574,
+      "average_largest_position": 0.2999999999999955,
+      "maximum_largest_position": 0.300000000000009
+    }
+  ],
+  "concentration_changes_vs_max_sharpe": {
+    "Shrunk Max Sharpe \u03bb=0.50": {
+      "mean_hhi_change": -0.008420766792437417,
+      "avg_largest_position_change": 2.3314683517128287e-15,
+      "mean_effective_holdings_change": 0.1565643322851753
+    },
+    "Turnover-Aware Max Sharpe \u03b3=0.10": {
+      "mean_hhi_change": -0.001326021844475389,
+      "avg_largest_position_change": 3.608224830031759e-15,
+      "mean_effective_holdings_change": 0.020481216019774706
+    },
+    "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10": {
+      "mean_hhi_change": -0.012444098411460602,
+      "avg_largest_position_change": 1.1102230246251565e-16,
+      "mean_effective_holdings_change": 0.21829476150647276
+    }
+  },
+  "cap_binding_table": [
+    {
+      "strategy": "Maximum Sharpe",
+      "dates_with_cap_hit": 67,
+      "pct_rebalance_dates_with_cap_hit": 100.0,
+      "most_frequent_capped_asset": "QQQ",
+      "most_frequent_capped_count": 44,
+      "max_simultaneously_capped_assets": 3
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "dates_with_cap_hit": 67,
+      "pct_rebalance_dates_with_cap_hit": 100.0,
+      "most_frequent_capped_asset": "IEF",
+      "most_frequent_capped_count": 44,
+      "max_simultaneously_capped_assets": 3
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "dates_with_cap_hit": 67,
+      "pct_rebalance_dates_with_cap_hit": 100.0,
+      "most_frequent_capped_asset": "QQQ",
+      "most_frequent_capped_count": 43,
+      "max_simultaneously_capped_assets": 3
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "dates_with_cap_hit": 67,
+      "pct_rebalance_dates_with_cap_hit": 100.0,
+      "most_frequent_capped_asset": "IEF",
+      "most_frequent_capped_count": 44,
+      "max_simultaneously_capped_assets": 3
+    }
+  ],
+  "sensitivity_table": [
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "mean": 1.4758389812681494,
+      "median": 1.4277060659625058,
+      "min": 1.076823737745914,
+      "max": 1.8000000000000147,
+      "mean_one_way_reallocation": 0.7379194906340747,
+      "max_one_way_reallocation": 0.9000000000000073,
+      "pct_reduction_mean_l1_vs_max_sharpe": -2.2965528037516623
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "mean": 1.4427064654851438,
+      "median": 1.460700836532475,
+      "min": 0.8880427747429543,
+      "max": 1.8026275990555527,
+      "mean_one_way_reallocation": 0.7213532327425719,
+      "max_one_way_reallocation": 0.9013137995277763,
+      "pct_reduction_mean_l1_vs_max_sharpe": 0.0
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "mean": 1.4622031841112484,
+      "median": 1.4130771887667037,
+      "min": 1.020445371914326,
+      "max": 1.8819316522419285,
+      "mean_one_way_reallocation": 0.7311015920556242,
+      "max_one_way_reallocation": 0.9409658261209642,
+      "pct_reduction_mean_l1_vs_max_sharpe": -1.3513988529571297
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "mean": 1.4312183600937958,
+      "median": 1.4553786880446307,
+      "min": 0.781162751247926,
+      "max": 1.81825366623988,
+      "mean_one_way_reallocation": 0.7156091800468979,
+      "max_one_way_reallocation": 0.90912683311994,
+      "pct_reduction_mean_l1_vs_max_sharpe": 0.7962884804487856
+    }
+  ],
+  "risk_contribution_table": [
+    {
+      "rebalance_date": "2018-02-01",
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "largest_risk_contributor": "TLT",
+      "largest_risk_contribution_pct": 39.79464044447988,
+      "top3_risk_contribution_pct": 84.50156579912735
+    },
+    {
+      "rebalance_date": "2018-02-01",
+      "strategy": "Maximum Sharpe",
+      "largest_risk_contributor": "TLT",
+      "largest_risk_contribution_pct": 56.3087632395596,
+      "top3_risk_contribution_pct": 101.85190070620274
+    },
+    {
+      "rebalance_date": "2018-02-01",
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "largest_risk_contributor": "TLT",
+      "largest_risk_contribution_pct": 38.7851355395705,
+      "top3_risk_contribution_pct": 87.10184095003926
+    },
+    {
+      "rebalance_date": "2018-02-01",
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "largest_risk_contributor": "TLT",
+      "largest_risk_contribution_pct": 56.30876323955961,
+      "top3_risk_contribution_pct": 101.85190070620276
+    },
+    {
+      "rebalance_date": "2022-04-01",
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 44.76163480101541,
+      "top3_risk_contribution_pct": 93.9181892215519
+    },
+    {
+      "rebalance_date": "2022-04-01",
+      "strategy": "Maximum Sharpe",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 67.58039405275059,
+      "top3_risk_contribution_pct": 98.09615065742769
+    },
+    {
+      "rebalance_date": "2022-04-01",
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 47.58183442701962,
+      "top3_risk_contribution_pct": 95.30660224668355
+    },
+    {
+      "rebalance_date": "2022-04-01",
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 68.09733104590096,
+      "top3_risk_contribution_pct": 94.87592881433478
+    },
+    {
+      "rebalance_date": "2026-09-01",
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "largest_risk_contributor": "EFA",
+      "largest_risk_contribution_pct": 36.00939169905718,
+      "top3_risk_contribution_pct": 85.62175307723452
+    },
+    {
+      "rebalance_date": "2026-09-01",
+      "strategy": "Maximum Sharpe",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 51.79872405867834,
+      "top3_risk_contribution_pct": 95.58911976310104
+    },
+    {
+      "rebalance_date": "2026-09-01",
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "largest_risk_contributor": "EFA",
+      "largest_risk_contribution_pct": 35.51877924226587,
+      "top3_risk_contribution_pct": 86.60638901814546
+    },
+    {
+      "rebalance_date": "2026-09-01",
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "largest_risk_contributor": "IWM",
+      "largest_risk_contribution_pct": 53.47463032099906,
+      "top3_risk_contribution_pct": 95.84384657154568
+    }
+  ],
+  "risk_contribution_representative_dates": [
+    "2018-02-01",
+    "2022-04-01",
+    "2026-09-01"
+  ],
+  "covid_stress": [
+    {
+      "stress_period": "COVID_2020",
+      "start_date": "2020-02-20",
+      "end_date": "2020-03-31",
+      "strategy": "SPY",
+      "cumulative_return": -0.2337127372346373,
+      "annualized_volatility": 0.7925695563995016,
+      "max_drawdown": -0.3344385656594938,
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "SPY:1.000, EEM:0.000, EFA:0.000"
+    },
+    {
+      "stress_period": "COVID_2020",
+      "start_date": "2020-02-20",
+      "end_date": "2020-03-31",
+      "strategy": "Maximum Sharpe",
+      "cumulative_return": -0.0820492349165131,
+      "annualized_volatility": 0.3814115817236177,
+      "max_drawdown": -0.1774893706696863,
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "LQD:0.300, SPY:0.275, TLT:0.184"
+    },
+    {
+      "stress_period": "COVID_2020",
+      "start_date": "2020-02-20",
+      "end_date": "2020-03-31",
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cumulative_return": -0.0556965094475305,
+      "annualized_volatility": 0.2929892948723478,
+      "max_drawdown": -0.1432047657249079,
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "IEF:0.300, LQD:0.300, SPY:0.273"
+    },
+    {
+      "stress_period": "COVID_2020",
+      "start_date": "2020-02-20",
+      "end_date": "2020-03-31",
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cumulative_return": -0.0840774180858331,
+      "annualized_volatility": 0.3869600650052837,
+      "max_drawdown": -0.1794804784039507,
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "LQD:0.300, SPY:0.290, TLT:0.189"
+    },
+    {
+      "stress_period": "COVID_2020",
+      "start_date": "2020-02-20",
+      "end_date": "2020-03-31",
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cumulative_return": -0.0567367579047611,
+      "annualized_volatility": 0.2951136142948499,
+      "max_drawdown": -0.1440375389554117,
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "IEF:0.300, LQD:0.300, SPY:0.277"
+    }
+  ],
+  "covid_entry_allocations": [
+    {
+      "strategy": "SPY",
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "SPY:1.000, EEM:0.000, EFA:0.000"
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "LQD:0.300, SPY:0.275, TLT:0.184"
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "IEF:0.300, LQD:0.300, SPY:0.273"
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "LQD:0.300, SPY:0.290, TLT:0.189"
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "entry_rebalance_date": "2019-11-01",
+      "top_positions_at_entry": "IEF:0.300, LQD:0.300, SPY:0.277"
+    }
+  ],
+  "rate_hike_2022_stress": [
+    {
+      "stress_period": "RATE_HIKE_2022",
+      "start_date": "2022-04-01",
+      "end_date": "2022-10-31",
+      "strategy": "SPY",
+      "cumulative_return": -0.1376501781684453,
+      "annualized_volatility": 0.256122603177711,
+      "max_drawdown": -0.2128474534689563,
+      "entry_rebalance_date": "2022-04-01",
+      "top_positions_at_entry": "SPY:1.000, EEM:0.000, EFA:0.000"
+    },
+    {
+      "stress_period": "RATE_HIKE_2022",
+      "start_date": "2022-04-01",
+      "end_date": "2022-10-31",
+      "strategy": "Maximum Sharpe",
+      "cumulative_return": -0.168120968719094,
+      "annualized_volatility": 0.1869613608871292,
+      "max_drawdown": -0.212058111295844,
+      "entry_rebalance_date": "2022-04-01",
+      "top_positions_at_entry": "QQQ:0.300, GLD:0.300, TLT:0.269"
+    },
+    {
+      "stress_period": "RATE_HIKE_2022",
+      "start_date": "2022-04-01",
+      "end_date": "2022-10-31",
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "cumulative_return": -0.1460761218060309,
+      "annualized_volatility": 0.1447938275348179,
+      "max_drawdown": -0.1746216719925454,
+      "entry_rebalance_date": "2022-04-01",
+      "top_positions_at_entry": "IEF:0.300, GLD:0.256, SPY:0.175"
+    },
+    {
+      "stress_period": "RATE_HIKE_2022",
+      "start_date": "2022-04-01",
+      "end_date": "2022-10-31",
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "cumulative_return": -0.1680858024008406,
+      "annualized_volatility": 0.176476339976545,
+      "max_drawdown": -0.20674390040436,
+      "entry_rebalance_date": "2022-04-01",
+      "top_positions_at_entry": "QQQ:0.300, GLD:0.300, TLT:0.225"
+    },
+    {
+      "stress_period": "RATE_HIKE_2022",
+      "start_date": "2022-04-01",
+      "end_date": "2022-10-31",
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "cumulative_return": -0.1502757075248636,
+      "annualized_volatility": 0.1397248507370905,
+      "max_drawdown": -0.176197490423144,
+      "entry_rebalance_date": "2022-04-01",
+      "top_positions_at_entry": "IEF:0.300, GLD:0.237, SPY:0.177"
+    }
+  ],
+  "drawdown_episode": [
+    {
+      "strategy": "Maximum Sharpe",
+      "max_drawdown": -0.2557997296251342,
+      "peak_date": "2021-12-27",
+      "trough_date": "2022-10-14",
+      "recovery_date": "2024-03-01",
+      "drawdown_duration_calendar_days": 291,
+      "drawdown_duration_observations": 203
+    },
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "max_drawdown": -0.2236576194670849,
+      "peak_date": "2021-12-27",
+      "trough_date": "2022-11-03",
+      "recovery_date": "2023-12-01",
+      "drawdown_duration_calendar_days": 311,
+      "drawdown_duration_observations": 217
+    }
+  ],
+  "rolling_stats": [
+    {
+      "strategy": "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+      "best_rolling_12m_sharpe": 3.8704816263278583,
+      "worst_rolling_12m_sharpe": -1.9211377272176904,
+      "median_rolling_12m_sharpe": 1.0710924164548272,
+      "std_rolling_12m_sharpe": 1.1671217387465302
+    },
+    {
+      "strategy": "Maximum Sharpe",
+      "best_rolling_12m_sharpe": 3.5466807051457674,
+      "worst_rolling_12m_sharpe": -1.668478116096332,
+      "median_rolling_12m_sharpe": 0.777963527780384,
+      "std_rolling_12m_sharpe": 1.0369700028675437
+    },
+    {
+      "strategy": "SPY",
+      "best_rolling_12m_sharpe": 3.451765190160184,
+      "worst_rolling_12m_sharpe": -0.9024761677462342,
+      "median_rolling_12m_sharpe": 0.7353830074352564,
+      "std_rolling_12m_sharpe": 1.0075275330574864
+    },
+    {
+      "strategy": "Shrunk Max Sharpe \u03bb=0.50",
+      "best_rolling_12m_sharpe": 3.834334748533312,
+      "worst_rolling_12m_sharpe": -1.8771707045707144,
+      "median_rolling_12m_sharpe": 0.9974462647217072,
+      "std_rolling_12m_sharpe": 1.1348792916684307
+    },
+    {
+      "strategy": "Turnover-Aware Max Sharpe \u03b3=0.10",
+      "best_rolling_12m_sharpe": 3.536530508095452,
+      "worst_rolling_12m_sharpe": -1.7248146118136067,
+      "median_rolling_12m_sharpe": 0.8178420907403459,
+      "std_rolling_12m_sharpe": 1.0640465697175072
+    }
+  ],
+  "lookback_exists": true,
+  "lookback_validation_comparison": {
+    "prod_cagr": 0.0970304099740695,
+    "prod_sharpe": 0.5853879908297653,
+    "prod_volatility": 0.1315886406635739,
+    "prod_max_drawdown": -0.2557997296251342,
+    "study_cagr": 0.0970304099740695,
+    "study_sharpe": 0.5853879908297653,
+    "study_volatility": 0.1315886406635739,
+    "study_max_drawdown": -0.2557997296251342,
+    "diff_cagr": 0.0,
+    "diff_sharpe": 0.0,
+    "diff_volatility": 0.0,
+    "diff_max_drawdown": 0.0
+  },
+  "lookback_table": [
+    {
+      "lookback_years": 1,
+      "oos_cagr": 0.0812629866546308,
+      "oos_sharpe": 0.4499012129383465,
+      "oos_volatility": 0.1361698632784663,
+      "oos_max_drawdown": -0.2985445348172553,
+      "oos_observations": 2158,
+      "rebalance_count": 67
+    },
+    {
+      "lookback_years": 2,
+      "oos_cagr": 0.0910433856960177,
+      "oos_sharpe": 0.5365552316149401,
+      "oos_volatility": 0.1324064728288814,
+      "oos_max_drawdown": -0.2651086796661435,
+      "oos_observations": 2158,
+      "rebalance_count": 67
+    },
+    {
+      "lookback_years": 3,
+      "oos_cagr": 0.0970304099740695,
+      "oos_sharpe": 0.5853879908297653,
+      "oos_volatility": 0.1315886406635739,
+      "oos_max_drawdown": -0.2557997296251342,
+      "oos_observations": 2158,
+      "rebalance_count": 67
+    },
+    {
+      "lookback_years": 5,
+      "oos_cagr": 0.1285533363318838,
+      "oos_sharpe": 0.8356048287970417,
+      "oos_volatility": 0.1299098959111569,
+      "oos_max_drawdown": -0.2631831706047298,
+      "oos_observations": 1614,
+      "rebalance_count": 52
+    }
+  ],
+  "baseline_consistency": {
+    "max_return_diff_equal_weight": 1.0408340855860843e-16,
+    "max_return_diff_minimum_variance": 0.059270051136751205,
+    "max_return_diff_maximum_sharpe": 0.0456352039197477,
+    "max_weight_diff_maximum_sharpe": 0.3000000000000097,
+    "spy_max_return_diff_vs_canonical_returns": 0.0
+  },
+  "constraints_failures": {
+    "optimizer_failures_by_strategy": {
+      "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10": 0,
+      "Maximum Sharpe": 0,
+      "Minimum Variance": 0,
+      "Shrunk Max Sharpe \u03bb=0.25": 0,
+      "Shrunk Max Sharpe \u03bb=0.50": 0,
+      "Shrunk Max Sharpe \u03bb=0.75": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.05": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.10": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.25": 0
+    },
+    "fallbacks_by_strategy": {
+      "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10": 0,
+      "Maximum Sharpe": 0,
+      "Minimum Variance": 0,
+      "Shrunk Max Sharpe \u03bb=0.25": 0,
+      "Shrunk Max Sharpe \u03bb=0.50": 0,
+      "Shrunk Max Sharpe \u03bb=0.75": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.05": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.10": 0,
+      "Turnover-Aware Max Sharpe \u03b3=0.25": 0
+    },
+    "max_abs_sum_weights_minus_1": 4.440892098500626e-16,
+    "minimum_weight": 0.0,
+    "maximum_weight": 0.3000000000000576,
+    "count_weights_over_30pct_plus_tolerance": 0,
+    "count_negative_weights_below_tolerance": 0,
+    "count_nan_weights": 0,
+    "count_inf_weights": 0
+  },
+  "output_completeness": {
+    "missing_files": [],
+    "missing_figures": []
+  }
+}

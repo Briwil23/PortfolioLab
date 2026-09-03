@@ -1,0 +1,8 @@
+strategy,n_rebalance_dates,dates_with_cap_hit,pct_rebalance_dates_with_cap_hit,avg_cap_assets,max_cap_assets,most_frequently_capped_assets
+SPY,67,67,100.0,1.0,1,SPY:67
+Equal Weight,67,0,0.0,0.0,0,
+Minimum Variance,67,67,100.0,1.6567164179104477,2,"IEF:67, LQD:44"
+Maximum Sharpe,67,67,100.0,2.0597014925373136,3,"QQQ:44, SPY:33, GLD:29, IEF:17, LQD:10"
+Combined Robust Max Sharpe λ=0.50 γ=0.10,67,67,100.0,1.9253731343283582,3,"IEF:44, SPY:27, GLD:25, LQD:15, QQQ:15"
+Inverse Volatility,67,0,0.0,0.0,0,
+Equal Risk Contribution,67,23,34.32835820895522,0.34328358208955223,1,IEF:23

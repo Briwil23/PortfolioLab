@@ -20,6 +20,7 @@ from src.optimization.mean_variance import (
     minimum_variance_portfolio,
 )
 from src.backtesting.walk_forward import RebalanceInfo, extract_holding_data, extract_training_data
+from src.backtesting.walk_forward import normalize_asset_order
 
 logger = logging.getLogger(__name__)
 
@@ -111,6 +112,9 @@ def execute_rebalance(
     # Extract training and holding data
     training_prices, training_returns = extract_training_data(prices_df, returns_df, rebalance_info)
     holding_returns = extract_holding_data(returns_df, rebalance_info)
+
+    training_returns = normalize_asset_order(training_returns, tickers)
+    holding_returns = normalize_asset_order(holding_returns, tickers)
 
     n_training_obs = len(training_returns)
 

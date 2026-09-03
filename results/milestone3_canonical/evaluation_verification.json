@@ -1,0 +1,22 @@
+{
+  "canonical_hashes_validated": true,
+  "live_data_calls": 0,
+  "oos_start": "2018-02-01",
+  "oos_end": "2026-09-02",
+  "oos_observations": 2158,
+  "rebalance_count": 67,
+  "optimizer_failures": 0,
+  "optimizer_fallbacks": 0,
+  "lookback_validation_pass": true,
+  "lookback_validation_message": "",
+  "baseline_return_tolerance": 1e-08,
+  "baseline_weight_tolerance": 1e-06,
+  "actual_equal_weight_return_diff": 0.0,
+  "actual_min_variance_return_diff": 0.0,
+  "actual_max_sharpe_return_diff": 0.0,
+  "actual_min_variance_weight_diff": 0.0,
+  "actual_max_sharpe_weight_diff": 0.0,
+  "baseline_consistency_pass": true,
+  "asset_order_invariance_test_pass": true,
+  "full_test_count": 72
+}

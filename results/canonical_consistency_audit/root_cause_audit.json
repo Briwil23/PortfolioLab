@@ -1,0 +1,262 @@
+{
+  "path_compare": {
+    "baseline": {
+      "runner": "run_reproducibility_milestone.py -> _run_canonical_baseline_once -> run_analysis.run_milestone_2_backtest",
+      "backtest": "src.backtesting.engine.WalkForwardBacktest.run / execute_rebalance",
+      "optimizer": "src.optimization.mean_variance.minimum_variance_portfolio / maximum_sharpe_portfolio",
+      "expected_return": "src.data.market_data.calculate_annualized_expected_returns",
+      "covariance": "src.data.market_data.calculate_annualized_covariance",
+      "risk_free_rate": 0.02,
+      "lookback_years": 3,
+      "rebalance_schedule": "generate_rebalance_dates(prices, lookback_years, rebalance_frequency, holdout_start_date)",
+      "weight_cap": 0.3,
+      "initialization": "equal weights",
+      "solver": "SciPy SLSQP, maxiter=1000, ftol=1e-12"
+    },
+    "milestone3": {
+      "runner": "run_milestone3_canonical_evaluation.py -> execute_milestone3_rebalance",
+      "backtest": "src.backtesting.milestone3.execute_milestone3_rebalance",
+      "optimizer": "src.optimization.mean_variance.minimum_variance_portfolio / maximum_sharpe_portfolio",
+      "expected_return": "src.data.market_data.calculate_annualized_expected_returns",
+      "covariance": "src.data.market_data.calculate_annualized_covariance",
+      "risk_free_rate": 0.02,
+      "lookback_years": 3,
+      "rebalance_schedule": "generate_rebalance_dates(prices, lookback_years, rebalance_frequency, holdout_start_date)",
+      "weight_cap": 0.3,
+      "initialization": "equal weights",
+      "solver": "SciPy SLSQP, maxiter=1000, ftol=1e-12"
+    }
+  },
+  "input_summary": {
+    "prices_hash": "574e9047c071e5da427cc15c52151b8e7e96dba7876a8fbc661fd67b85e7b58b",
+    "returns_hash": "f60659b5530c255e8ee768ef9d4b760e54346234b22d4a3848e9b0d03f1910ee",
+    "first_date": "2015-01-02",
+    "last_date": "2026-09-02",
+    "row_count_prices": 2934,
+    "row_count_returns": 2933,
+    "column_order": [
+      "GLD",
+      "EFA",
+      "IWM",
+      "VNQ",
+      "EEM",
+      "SPY",
+      "TLT",
+      "LQD",
+      "QQQ",
+      "IEF"
+    ]
+  },
+  "schedule": {
+    "baseline_count": 67,
+    "milestone3_count": 67,
+    "only_baseline": [],
+    "only_milestone3": []
+  },
+  "first_divergence": {
+    "Minimum Variance": {
+      "first_date": "2018-02-01",
+      "rows": [
+        {
+          "asset": "GLD",
+          "weight_base": 0.0,
+          "weight_mil": 0.1094708978037314,
+          "abs_diff": 0.1094708978037314
+        },
+        {
+          "asset": "IEF",
+          "weight_base": 0.0081536548643584,
+          "weight_mil": 0.2999999999999999,
+          "abs_diff": 0.29184634513564145
+        },
+        {
+          "asset": "SPY",
+          "weight_base": 0.1094708971610164,
+          "weight_mil": 0.2818082240597662,
+          "abs_diff": 0.17233732689874978
+        },
+        {
+          "asset": "TLT",
+          "weight_base": 0.2818082244797036,
+          "weight_mil": 0.0081536542912783,
+          "abs_diff": 0.2736545701884253
+        },
+        {
+          "asset": "VNQ",
+          "weight_base": 0.3,
+          "weight_mil": 0.0,
+          "abs_diff": 0.3
+        }
+      ],
+      "max_diff": 0.3
+    },
+    "Maximum Sharpe": {
+      "first_date": "2018-02-01",
+      "rows": [
+        {
+          "asset": "GLD",
+          "weight_base": 0.2999999999999999,
+          "weight_mil": 0.0999999999999973,
+          "abs_diff": 0.20000000000000256
+        },
+        {
+          "asset": "QQQ",
+          "weight_base": 0.0,
+          "weight_mil": 0.3000000000000007,
+          "abs_diff": 0.3000000000000007
+        },
+        {
+          "asset": "SPY",
+          "weight_base": 0.0999999999999994,
+          "weight_mil": 0.3000000000000007,
+          "abs_diff": 0.20000000000000132
+        },
+        {
+          "asset": "TLT",
+          "weight_base": 0.2999999999999999,
+          "weight_mil": 0.0,
+          "abs_diff": 0.2999999999999999
+        }
+      ],
+      "max_diff": 0.3000000000000097
+    }
+  },
+  "reconstructed_inputs": {
+    "Minimum Variance": {
+      "training_start": "2015-02-01",
+      "training_end": "2018-01-31",
+      "holding_start": "2018-02-01",
+      "n_training_obs": 756,
+      "mu_head": [
+        0.142981343765,
+        0.19338220321,
+        0.126883848812,
+        0.101153714872,
+        0.127851397667
+      ],
+      "sigma_row0_head": [
+        0.014605809497,
+        0.016418242148,
+        0.016150661547,
+        0.015017697231,
+        0.01759606236
+      ],
+      "risk_free_rate": 0.02,
+      "max_weight": 0.3,
+      "current_optimizer_weights": [
+        0.281808227736,
+        0.0,
+        0.000567220924,
+        0.0,
+        0.0,
+        0.008153654752,
+        0.3,
+        0.3,
+        0.109470896588,
+        0.0
+      ],
+      "ordered_tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "VNQ"
+      ],
+      "prev_base_head": [],
+      "prev_mil_head": []
+    },
+    "Maximum Sharpe": {
+      "training_start": "2015-02-01",
+      "training_end": "2018-01-31",
+      "holding_start": "2018-02-01",
+      "n_training_obs": 756,
+      "mu_head": [
+        0.142981343765,
+        0.19338220321,
+        0.126883848812,
+        0.101153714872,
+        0.127851397667
+      ],
+      "sigma_row0_head": [
+        0.014605809497,
+        0.016418242148,
+        0.016150661547,
+        0.015017697231,
+        0.01759606236
+      ],
+      "risk_free_rate": 0.02,
+      "max_weight": 0.3,
+      "current_optimizer_weights": [
+        0.3,
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3,
+        0.1,
+        0.0
+      ],
+      "ordered_tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "VNQ"
+      ],
+      "prev_base_head": [],
+      "prev_mil_head": []
+    }
+  },
+  "same_input_optimizer_test": {
+    "Minimum Variance": 0.0,
+    "Maximum Sharpe": 0.0
+  },
+  "manual_return_check": {
+    "Minimum Variance": [
+      {
+        "date": "2018-02-01",
+        "manual_base": -0.010345384621495899,
+        "manual_mil": -0.004377061289829083
+      },
+      {
+        "date": "2018-02-02",
+        "manual_base": -0.009767318209708387,
+        "manual_mil": -0.01253198743087472
+      },
+      {
+        "date": "2018-02-05",
+        "manual_base": -0.005661407532306872,
+        "manual_mil": -0.013774512020585505
+      }
+    ],
+    "Maximum Sharpe": [
+      {
+        "date": "2018-02-01",
+        "manual_base": -0.0028622017182289494,
+        "manual_mil": -0.0069070703706333655
+      },
+      {
+        "date": "2018-02-02",
+        "manual_base": -0.013007107092256921,
+        "manual_mil": -0.0073553300403437685
+      },
+      {
+        "date": "2018-02-05",
+        "manual_base": -0.007872212526736755,
+        "manual_mil": 0.0016351415486401326
+      }
+    ]
+  }
+}

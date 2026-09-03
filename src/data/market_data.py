@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 from pathlib import Path
 from typing import Iterable, Optional
@@ -12,6 +14,168 @@ import yfinance as yf
 import yaml
 
 logger = logging.getLogger(__name__)
+
+
+class ReproducibilityError(RuntimeError):
+    """Raised when canonical reproducibility requirements are not satisfied."""
+
+
+CANONICAL_PRICES_FILE = "canonical_prices.csv"
+CANONICAL_RETURNS_FILE = "canonical_returns.csv"
+CANONICAL_MANIFEST_FILE = "dataset_manifest.json"
+
+
+def compute_file_sha256(file_path: str | Path) -> str:
+    """Compute the SHA256 hash of a file in a deterministic way."""
+    path = Path(file_path)
+    digest = hashlib.sha256()
+    with path.open("rb") as file_obj:
+        for chunk in iter(lambda: file_obj.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def write_environment_manifest(
+    output_path: str | Path,
+    dependency_names: Iterable[str] | None = None,
+) -> dict:
+    """Write a minimal reproducibility environment manifest.
+
+    The manifest captures versions of Python and key numerical/runtime dependencies.
+    """
+    import platform
+    from importlib.metadata import PackageNotFoundError, version
+
+    deps = list(dependency_names or ["numpy", "pandas", "scipy", "yfinance", "pytest"])
+    dependency_versions: dict[str, str | None] = {}
+    for dep in deps:
+        try:
+            dependency_versions[dep] = version(dep)
+        except PackageNotFoundError:
+            dependency_versions[dep] = None
+
+    manifest = {
+        "python_version": platform.python_version(),
+        "python_implementation": platform.python_implementation(),
+        "platform": platform.platform(),
+        "dependencies": dependency_versions,
+    }
+
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as file_obj:
+        json.dump(manifest, file_obj, indent=2)
+
+    return manifest
+
+
+def create_canonical_dataset_snapshot(
+    prices: pd.DataFrame,
+    returns: pd.DataFrame,
+    output_dir: str | Path,
+    dataset_name: str,
+    tickers: list[str],
+    trading_days_per_year: int,
+    source_provider: str,
+    download_settings: dict,
+    price_adjustment_convention: str,
+    missing_value_policy: str,
+) -> dict:
+    """Persist canonical prices/returns and a hash-validated dataset manifest."""
+    canonical_dir = Path(output_dir)
+    canonical_dir.mkdir(parents=True, exist_ok=True)
+
+    prices_path = canonical_dir / CANONICAL_PRICES_FILE
+    returns_path = canonical_dir / CANONICAL_RETURNS_FILE
+
+    prices.to_csv(prices_path)
+    returns.to_csv(returns_path)
+
+    file_hashes = {
+        CANONICAL_PRICES_FILE: compute_file_sha256(prices_path),
+        CANONICAL_RETURNS_FILE: compute_file_sha256(returns_path),
+    }
+
+    manifest = {
+        "dataset_name": dataset_name,
+        "snapshot_creation_date": pd.Timestamp.utcnow().isoformat(),
+        "data_start_date": str(prices.index.min().date()),
+        "data_end_date": str(prices.index.max().date()),
+        "tickers": tickers,
+        "trading_days_per_year": int(trading_days_per_year),
+        "price_adjustment_convention": price_adjustment_convention,
+        "source_provider": source_provider,
+        "download_settings": download_settings,
+        "missing_value_policy": missing_value_policy,
+        "price_rows": int(prices.shape[0]),
+        "price_columns": int(prices.shape[1]),
+        "returns_rows": int(returns.shape[0]),
+        "returns_columns": int(returns.shape[1]),
+        "file_hashes": file_hashes,
+    }
+
+    manifest_path = canonical_dir / CANONICAL_MANIFEST_FILE
+    with manifest_path.open("w", encoding="utf-8") as file_obj:
+        json.dump(manifest, file_obj, indent=2)
+
+    return manifest
+
+
+def _validate_canonical_dataset(canonical_dir: str | Path) -> dict:
+    """Validate required canonical files and ensure hashes match the manifest."""
+    directory = Path(canonical_dir)
+    manifest_path = directory / CANONICAL_MANIFEST_FILE
+    if not manifest_path.exists():
+        raise ReproducibilityError(
+            f"Canonical mode requires {manifest_path}, but it does not exist."
+        )
+
+    with manifest_path.open("r", encoding="utf-8") as file_obj:
+        manifest = json.load(file_obj)
+
+    hashes = manifest.get("file_hashes", {})
+    for required_name in (CANONICAL_PRICES_FILE, CANONICAL_RETURNS_FILE):
+        file_path = directory / required_name
+        if not file_path.exists():
+            raise ReproducibilityError(
+                f"Canonical mode requires {file_path}, but it does not exist."
+            )
+        expected_hash = hashes.get(required_name)
+        if not expected_hash:
+            raise ReproducibilityError(
+                f"Manifest {manifest_path} is missing hash for {required_name}."
+            )
+        actual_hash = compute_file_sha256(file_path)
+        if actual_hash != expected_hash:
+            raise ReproducibilityError(
+                "Canonical dataset hash mismatch for "
+                f"{required_name}. Expected {expected_hash}, got {actual_hash}."
+            )
+
+    return manifest
+
+
+def load_canonical_market_data(
+    canonical_dir: str | Path,
+    trading_days_per_year: int = 252,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Series, dict]:
+    """Load and validate canonical market data, then derive annualized stats."""
+    directory = Path(canonical_dir)
+    manifest = _validate_canonical_dataset(directory)
+
+    prices = pd.read_csv(directory / CANONICAL_PRICES_FILE, index_col=0, parse_dates=True)
+    returns = pd.read_csv(directory / CANONICAL_RETURNS_FILE, index_col=0, parse_dates=True)
+
+    prices = prices.sort_index()
+    returns = returns.sort_index()
+
+    covariance = calculate_annualized_covariance(
+        returns, trading_days_per_year=trading_days_per_year
+    )
+    expected_returns = calculate_annualized_expected_returns(
+        returns, trading_days_per_year=trading_days_per_year
+    )
+    return prices, returns, covariance, expected_returns, manifest
 
 
 def load_config(config_path: str | Path) -> dict:
@@ -229,6 +393,8 @@ def fetch_and_prepare_market_data(
     trading_days_per_year: int = 252,
     save_output: bool = True,
     output_dir: str | Path = "data/processed",
+    data_mode: str = "live",
+    canonical_dir: str | Path = "data/canonical",
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Series]:
     """Download, clean, and transform a market-data set.
 
@@ -238,15 +404,29 @@ def fetch_and_prepare_market_data(
         Cleaned prices, daily returns, annualized covariance matrix, and annualized
         expected returns.
     """
-    prices = download_adjusted_prices(tickers=tickers, start_date=start_date, end_date=end_date)
-    cleaned_prices = clean_and_validate_prices(prices)
-    daily_returns = calculate_daily_returns(cleaned_prices, method="simple")
-    expected_returns = calculate_annualized_expected_returns(
-        daily_returns, trading_days_per_year=trading_days_per_year
-    )
-    covariance = calculate_annualized_covariance(
-        daily_returns, trading_days_per_year=trading_days_per_year
-    )
+    mode = str(data_mode).lower()
+    if mode not in {"live", "canonical"}:
+        raise ValueError("data_mode must be either 'live' or 'canonical'.")
+
+    if mode == "canonical":
+        cleaned_prices, daily_returns, covariance, expected_returns, _ = load_canonical_market_data(
+            canonical_dir=canonical_dir,
+            trading_days_per_year=trading_days_per_year,
+        )
+    else:
+        prices = download_adjusted_prices(
+            tickers=tickers,
+            start_date=start_date,
+            end_date=end_date,
+        )
+        cleaned_prices = clean_and_validate_prices(prices)
+        daily_returns = calculate_daily_returns(cleaned_prices, method="simple")
+        expected_returns = calculate_annualized_expected_returns(
+            daily_returns, trading_days_per_year=trading_days_per_year
+        )
+        covariance = calculate_annualized_covariance(
+            daily_returns, trading_days_per_year=trading_days_per_year
+        )
 
     if save_output:
         save_processed_data(
