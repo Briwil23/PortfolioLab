@@ -1,0 +1,9 @@
+{
+  "live_data_calls": 0,
+  "run1_vs_run2_max_return_diff": 0.0,
+  "run1_vs_run2_max_weight_diff": 0.0,
+  "run1_oos_first_date": "2018-02-01",
+  "run1_oos_last_date": "2026-09-02",
+  "run1_oos_observations": 2158,
+  "run1_rebalance_count": 67
+}

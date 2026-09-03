@@ -1,0 +1,12 @@
+{
+  "canonical_hashes_validated": true,
+  "live_data_calls": 0,
+  "oos_start": "2018-02-01",
+  "oos_end": "2026-09-02",
+  "oos_observations": 2158,
+  "rebalance_count": 67,
+  "optimizer_failures": 0,
+  "optimizer_fallbacks": 0,
+  "lookback_validation_pass": true,
+  "lookback_validation_message": ""
+}

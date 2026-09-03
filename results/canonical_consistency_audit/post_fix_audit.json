@@ -1,0 +1,160 @@
+{
+  "canonical_hashes_validated": true,
+  "live_data_calls": 0,
+  "baseline_return_tolerance": 1e-08,
+  "baseline_weight_tolerance": 1e-06,
+  "actual_equal_weight_return_diff": 0.0,
+  "actual_min_variance_return_diff": 0.0,
+  "actual_max_sharpe_return_diff": 0.0,
+  "actual_min_variance_weight_diff": 0.0,
+  "actual_max_sharpe_weight_diff": 0.0,
+  "baseline_consistency_pass": true,
+  "asset_order_invariance_test_pass": true,
+  "full_test_count": 72,
+  "spy_max_diff": 0.0,
+  "artifact_hashes": {
+    "walk_forward_returns_gross.csv": {
+      "sha_old": "d9185cd262e79ab86711c977d70d7e3f72b6835c37226357faa98320c9e1a5ca",
+      "sha_new": "da3dde9d7f6651dc04a79876e11fa6bb794f095243824ed7616b1c1a014cf7e3",
+      "changed": true
+    },
+    "walk_forward_returns_net.csv": {
+      "sha_old": "3a53875cd68aa2d700b5833cfc5955739622228ca1560e9d7bdc8ad716368fbd",
+      "sha_new": "fa9b4f679651ef6802b51c3fa856e5d1df047d8ca8376a2cbf2222a2e2da3f90",
+      "changed": true
+    },
+    "walk_forward_weights.csv": {
+      "sha_old": "d8ad9bb59c4daf0bfbc6cd494e6d93f38f2e4061358ece0dc02805035286c611",
+      "sha_new": "9a1ee042cadfd3cb41f144e01348fbb09e432f00df5801cc5131a5c24aa50fee",
+      "changed": true
+    },
+    "walk_forward_metrics_gross.csv": {
+      "sha_old": "f25e0a344fafc8534dc45d69ba2066d068157ce5a4e1abffc453afb61936a0dd",
+      "sha_new": "91d354383a8d978a30907b86c2e1ae6e26594b62ac7cf8f29f94d4b62358e801",
+      "changed": true
+    },
+    "walk_forward_metrics_net.csv": {
+      "sha_old": "2c82f824f526a2f8d8ba10626e911f8999edb987237b2f54c2e4b05f147ba4db",
+      "sha_new": "122ca5a9fa1c73f7c6ee5a3a7444c73cce013db5d00655f517e8e0a9b64f1e4f",
+      "changed": true
+    },
+    "turnover_analysis.csv": {
+      "sha_old": "f8511007e2913e9cfe2e07ae6a33dfb4f511ca36f63677a34bac834aec5f3620",
+      "sha_new": "d84a196e0647032b885c3e50bb762dce977134de046119019fcc388f0225f821",
+      "changed": true
+    },
+    "concentration_analysis.csv": {
+      "sha_old": "19e2ede019a2b6b802fbc59148dc7293c33e924969a83ada68fb32de70f05272",
+      "sha_new": "ef32cbfe3a206c402d4fa7caf3b4a0465b4c6306c0d5048a75cf1066a42b2913",
+      "changed": true
+    },
+    "expected_return_sensitivity.csv": {
+      "sha_old": "a88d24536b960029a3bdc60224503d8d0fb6fdbcf888f96e744a8994ba664dc1",
+      "sha_new": "acbccf177862eeccded46419f86d4b67d16bdcf0fa2e8702ce6db2352bc6c278",
+      "changed": true
+    },
+    "stress_period_analysis.csv": {
+      "sha_old": "b85d44adca0e3162f6550a9a08c240b699996df96f724e58f7fffebb68a0bacc",
+      "sha_new": "762507bfb9b8fc269a7bb67609a164d4f35204b61b6ed039a1e9044ce5217322",
+      "changed": true
+    }
+  },
+  "old_new_classical": {
+    "Maximum Sharpe": {
+      "max_return_diff": 7.182078098910694e-09,
+      "max_weight_diff": 3.8208336370151863e-07,
+      "old_metrics": {
+        "cagr": 0.0970304099740695,
+        "annualized_volatility": 0.1315886406635739,
+        "sharpe": 0.5853879908297653,
+        "sortino": 0.5536507566480442,
+        "max_drawdown": -0.2557997296251342,
+        "calmar": 0.3793217847269201,
+        "cumulative_return": 1.2101015612944286,
+        "terminal_wealth": 2.2101015612944286
+      },
+      "new_metrics": {
+        "cagr": 0.0970304061679812,
+        "annualized_volatility": 0.1315886414146967,
+        "sharpe": 0.5853879585641643,
+        "sortino": 0.5536507243677337,
+        "max_drawdown": -0.2557997382928744,
+        "calmar": 0.3793217569944797,
+        "cumulative_return": 1.2101014956310356,
+        "terminal_wealth": 2.2101014956310356
+      }
+    },
+    "Shrunk Max Sharpe \u03bb=0.50": {
+      "max_return_diff": 9.297220007753459e-10,
+      "max_weight_diff": 3.972798669898969e-08,
+      "old_metrics": {
+        "cagr": 0.0885985798342523,
+        "annualized_volatility": 0.1082296171469719,
+        "sharpe": 0.633824470995753,
+        "sortino": 0.6108587631526753,
+        "max_drawdown": -0.2232372975831256,
+        "calmar": 0.3968807219647576,
+        "cumulative_return": 1.068791862920159,
+        "terminal_wealth": 2.068791862920159
+      },
+      "new_metrics": {
+        "cagr": 0.0885985801999629,
+        "annualized_volatility": 0.1082296172882252,
+        "sharpe": 0.6338244735475566,
+        "sortino": 0.6108587655627956,
+        "max_drawdown": -0.2232372978428438,
+        "calmar": 0.3968807231412341,
+        "cumulative_return": 1.0687918688718088,
+        "terminal_wealth": 2.0687918688718088
+      }
+    },
+    "Turnover-Aware Max Sharpe \u03b3=0.10": {
+      "max_return_diff": 4.331808699936657e-09,
+      "max_weight_diff": 1.5986154219826965e-07,
+      "old_metrics": {
+        "cagr": 0.1015099733871163,
+        "annualized_volatility": 0.1311213249873448,
+        "sharpe": 0.6216378105924666,
+        "sortino": 0.5903829278354664,
+        "max_drawdown": -0.2533306639837149,
+        "calmar": 0.4007014855242386,
+        "cumulative_return": 1.288588013649219,
+        "terminal_wealth": 2.288588013649219
+      },
+      "new_metrics": {
+        "cagr": 0.1015099747491119,
+        "annualized_volatility": 0.1311213250904731,
+        "sharpe": 0.6216378204908349,
+        "sortino": 0.5903829382216117,
+        "max_drawdown": -0.2533306654895891,
+        "calmar": 0.4007014885187028,
+        "cumulative_return": 1.2885880378821413,
+        "terminal_wealth": 2.2885880378821413
+      }
+    },
+    "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10": {
+      "max_return_diff": 2.1464204996712866e-09,
+      "max_weight_diff": 6.09773632975763e-08,
+      "old_metrics": {
+        "cagr": 0.0967766399681666,
+        "annualized_volatility": 0.1088200444626143,
+        "sharpe": 0.7055376640150487,
+        "sortino": 0.6849383088892955,
+        "max_drawdown": -0.2236576194670849,
+        "calmar": 0.4326999464572634,
+        "cumulative_return": 1.2057272986593102,
+        "terminal_wealth": 2.20572729865931
+      },
+      "new_metrics": {
+        "cagr": 0.0967766395702165,
+        "annualized_volatility": 0.1088200441603568,
+        "sharpe": 0.7055376623177874,
+        "sortino": 0.6849383067949812,
+        "max_drawdown": -0.2236576181739532,
+        "calmar": 0.4326999471797424,
+        "cumulative_return": 1.2057272918057955,
+        "terminal_wealth": 2.2057272918057955
+      }
+    }
+  }
+}

@@ -9,6 +9,33 @@ from typing import Tuple
 import pandas as pd
 
 
+def normalize_asset_order(frame: pd.DataFrame, configured_assets: list[str]) -> pd.DataFrame:
+    """Validate and reorder asset columns to match the configured asset list."""
+    if frame.empty:
+        raise ValueError("Cannot normalize asset order for an empty DataFrame.")
+
+    frame_columns = list(frame.columns)
+    configured_set = set(configured_assets)
+    frame_set = set(frame_columns)
+
+    if len(frame_columns) != len(frame_set):
+        duplicates = sorted({column for column in frame_columns if frame_columns.count(column) > 1})
+        raise ValueError(
+            "Asset-order normalization requires unique columns, but duplicates were found: "
+            f"{duplicates}"
+        )
+
+    missing = sorted(configured_set - frame_set)
+    extra = sorted(frame_set - configured_set)
+    if missing or extra:
+        raise ValueError(
+            "Asset-order mismatch. "
+            f"Missing assets: {missing}. Extra assets: {extra}."
+        )
+
+    return frame.loc[:, configured_assets].copy()
+
+
 @dataclass
 class RebalanceInfo:
     """Information about a single rebalance event."""

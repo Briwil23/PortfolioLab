@@ -8,9 +8,27 @@ Python • SciPy • pandas • NumPy • Quantitative Finance • Mathematical 
 
 PortfolioLab is a production-quality quantitative-finance research framework for constructing, analyzing, and visualizing diversified portfolios using classical mean-variance optimization and rigorous statistical methodology.
 
-**Milestone 1** (current) demonstrates an **in-sample portfolio-construction framework** with transparent mathematical implementation and institutional-grade code quality. The engine downloads historical ETF price data, estimates expected returns and covariance matrices from sample data, solves constrained optimization problems to find efficient portfolio allocations, and generates comprehensive performance analytics and visualizations.
+The project now spans four completed research milestones: classical portfolio optimization, walk-forward out-of-sample backtesting, robust portfolio construction, and risk-based portfolio construction under a frozen canonical evaluation harness.
 
 This is **not a predictive model or claims any investment outperformance**. Rather, it is a rigorous demonstration of how to implement portfolio optimization mathematics correctly, document assumptions clearly, and structure quantitative research code for professional use.
+
+## Research Progression
+
+**Milestone 1 — Classical Portfolio Optimization**
+Implemented transparent mean-variance allocation, baseline performance reporting, and explicit optimization math.
+
+**Milestone 2 — Walk-Forward Out-of-Sample Backtesting**
+Added rolling training/holding periods, benchmark comparison, and reproducible out-of-sample evaluation.
+
+**Milestone 3 — Robust Portfolio Construction & Turnover Control**
+Introduced robust expected-return handling and stronger implementation discipline around turnover and reproducibility.
+
+**Milestone 4 — Risk-Based Portfolio Construction**
+Added inverse-volatility and equal-risk-contribution portfolios, a frozen canonical dataset, locked sensitivity experiments, and deterministic canonical evaluation.
+
+Milestone 4’s main empirical result is balanced rather than dominating: Combined Robust Max Sharpe achieved the strongest out-of-sample risk-adjusted performance in the canonical test, with gross Sharpe of about 0.706. Maximum Sharpe followed at about 0.585, Inverse Volatility at about 0.502, and Equal Risk Contribution at about 0.471. The risk-based portfolios reduced turnover dramatically versus Maximum Sharpe, with Inverse Volatility down about 92.9% and ERC down about 91.2%, and they typically held about 7 to 8 effective positions versus roughly 4 for the optimized return-dependent portfolios. ERC also completed all 67 of 67 optimizations without fallback on the canonical run.
+
+The conclusion is therefore conservative: risk-based construction materially improved robustness, diversification, and implementation stability, but it did not produce the highest out-of-sample risk-adjusted performance.
 
 ## Problem & Motivation
 

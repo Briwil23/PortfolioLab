@@ -1,0 +1,36 @@
+{
+  "dataset_name": "portfoliolab_canonical_dataset_v1",
+  "snapshot_creation_date": "2026-09-03T19:54:56.977126+00:00",
+  "data_start_date": "2015-01-02",
+  "data_end_date": "2026-09-02",
+  "tickers": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "EFA",
+    "EEM",
+    "TLT",
+    "IEF",
+    "LQD",
+    "GLD",
+    "VNQ"
+  ],
+  "trading_days_per_year": 252,
+  "price_adjustment_convention": "Yahoo Finance Adj Close",
+  "source_provider": "yfinance",
+  "download_settings": {
+    "interval": "1d",
+    "auto_adjust": false,
+    "actions": "ignore",
+    "group_by": "ticker"
+  },
+  "missing_value_policy": "drop rows with any NaN after coverage validation; then ffill/bfill",
+  "price_rows": 2934,
+  "price_columns": 10,
+  "returns_rows": 2933,
+  "returns_columns": 10,
+  "file_hashes": {
+    "canonical_prices.csv": "574e9047c071e5da427cc15c52151b8e7e96dba7876a8fbc661fd67b85e7b58b",
+    "canonical_returns.csv": "f60659b5530c255e8ee768ef9d4b760e54346234b22d4a3848e9b0d03f1910ee"
+  }
+}

@@ -13,6 +13,11 @@ from src.backtesting.engine import (
     execute_rebalance,
     calculate_portfolio_returns,
 )
+from src.backtesting.milestone4 import (
+    MILESTONE4_STRATEGY_NAMES,
+    execute_milestone4_rebalance,
+    run_milestone4_walk_forward,
+)
 
 __all__ = [
     "RebalanceInfo",
@@ -24,5 +29,8 @@ __all__ = [
     "WalkForwardBacktest",
     "execute_rebalance",
     "calculate_portfolio_returns",
+    "MILESTONE4_STRATEGY_NAMES",
+    "execute_milestone4_rebalance",
+    "run_milestone4_walk_forward",
 ]
 

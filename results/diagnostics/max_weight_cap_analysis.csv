@@ -1,0 +1,4 @@
+strategy,dates_with_cap,pct_dates_with_cap,avg_cap_assets,max_cap_assets
+Equal Weight,0,0.0,0.0,0
+Maximum Sharpe,66,100.0,2.0606060606060606,3
+Minimum Variance,66,100.0,1.6515151515151516,2

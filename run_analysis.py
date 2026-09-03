@@ -61,7 +61,7 @@ def run_milestone_1_analysis(
     prices: pd.DataFrame,
     returns: pd.DataFrame,
     covariance: pd.DataFrame,
-    expected_returns: pd.DataFrame,
+    expected_returns: pd.Series,
     trading_days_per_year: int,
     risk_free_rate: float,
     max_weight: float,
@@ -194,7 +194,8 @@ def run_milestone_2_backtest(
     max_weight: float,
     benchmark_ticker: str,
     backtest_config: dict,
-) -> dict:
+    backtest_output_dir: Path | None = None,
+) -> dict | None:
     """
     Run Milestone 2 walk-forward out-of-sample backtest.
 
@@ -236,7 +237,7 @@ def run_milestone_2_backtest(
     results = backtest.run()
 
     # Create output directory
-    backtest_dir = root / "results" / "backtest"
+    backtest_dir = backtest_output_dir or (root / "results" / "backtest")
     backtest_dir.mkdir(parents=True, exist_ok=True)
 
     # Save rebalance history
@@ -349,6 +350,8 @@ def main() -> None:
     max_weight = float(config.get("max_weight", 0.30))
     benchmark_ticker = config.get("benchmark_ticker", "SPY")
     backtest_config = config.get("backtest", {})
+    data_mode = str(config.get("data_mode", "live")).lower()
+    canonical_dir = Path(config.get("canonical_data_dir", "data/canonical"))
 
     logger.info("Starting PortfolioLab analysis for tickers: %s", tickers)
 
@@ -360,6 +363,8 @@ def main() -> None:
         trading_days_per_year=trading_days_per_year,
         save_output=True,
         output_dir=root / "data" / "processed",
+        data_mode=data_mode,
+        canonical_dir=root / canonical_dir,
     )
 
     # ========================================================================
