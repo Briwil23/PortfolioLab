@@ -4,4 +4,5 @@ scipy>=1.11
 matplotlib>=3.8
 yfinance>=0.2.36
 PyYAML>=6.0
+statsmodels>=0.14
 pytest>=8.0
