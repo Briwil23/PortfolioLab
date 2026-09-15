@@ -1,0 +1,36 @@
+{
+  "canonical_file": "canonical_factors_daily.csv",
+  "canonical_sha256": "4d402ebf191167dc4af45dd5ccc0525453354c4759e2485891840a1780386c94",
+  "first_date": "1963-07-01",
+  "last_date": "2026-06-30",
+  "row_count": 15854,
+  "columns": [
+    "date",
+    "MKT_RF",
+    "SMB",
+    "HML",
+    "RMW",
+    "CMA",
+    "MOM",
+    "RF"
+  ],
+  "frequency": "daily",
+  "units": "decimal",
+  "parser_version": "1.0.0",
+  "source_files": [
+    {
+      "dataset_name": "Fama/French 5 Factors [Daily]",
+      "filename": "F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+      "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+      "raw_sha256": "54a2968a82b7878e8b812b9ced722dd9484719e7031e72cd9528cc2a8e63ccde",
+      "download_utc_timestamp": "2026-09-03T22:10:41.234629+00:00"
+    },
+    {
+      "dataset_name": "Momentum Factor (Mom) [Daily]",
+      "filename": "F-F_Momentum_Factor_daily_CSV.zip",
+      "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip",
+      "raw_sha256": "e70cc5c838203ac59342432d842ccaae4b02374259712e09bb220029e29c93db",
+      "download_utc_timestamp": "2026-09-03T22:10:41.383208+00:00"
+    }
+  ]
+}

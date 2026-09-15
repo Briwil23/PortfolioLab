@@ -1,5 +1,6 @@
 """Portfolio optimization routines."""
 
+from src.optimization.cvar import minimum_cvar_95_portfolio
 from src.optimization.mean_variance import (
     compute_equal_weight_portfolio,
     efficient_frontier,
@@ -29,6 +30,7 @@ from src.optimization.risk_based import (
 )
 
 __all__ = [
+    "minimum_cvar_95_portfolio",
     "compute_equal_weight_portfolio",
     "efficient_frontier",
     "maximum_sharpe_portfolio",

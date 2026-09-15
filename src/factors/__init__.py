@@ -1,0 +1,43 @@
+"""Canonical factor ingestion utilities for Milestone 5."""
+
+from .data import (
+    CANONICAL_FACTORS_DIRNAME,
+    CANONICAL_FACTORS_FILE,
+    CANONICAL_FACTORS_MANIFEST_FILE,
+    CANONICAL_FACTORS_RAW_DIRNAME,
+    CANONICAL_FACTORS_SOURCE_METADATA_FILE,
+    FF3_DAILY_SOURCE_SPEC,
+    FF5_DAILY_SOURCE_SPEC,
+    MOMENTUM_DAILY_SOURCE_SPEC,
+    FACTOR_CANONICAL_COLUMNS,
+    FACTOR_REQUIRED_LABELS,
+    FactorDataError,
+    align_factor_dates_with_returns,
+    build_canonical_factor_dataset,
+    compute_file_sha256,
+    download_factor_archives,
+    load_canonical_factor_dataset,
+    validate_canonical_factor_frame,
+    write_factor_validation_artifacts,
+)
+
+__all__ = [
+    "CANONICAL_FACTORS_DIRNAME",
+    "CANONICAL_FACTORS_FILE",
+    "CANONICAL_FACTORS_MANIFEST_FILE",
+    "CANONICAL_FACTORS_RAW_DIRNAME",
+    "CANONICAL_FACTORS_SOURCE_METADATA_FILE",
+    "FF3_DAILY_SOURCE_SPEC",
+    "FF5_DAILY_SOURCE_SPEC",
+    "MOMENTUM_DAILY_SOURCE_SPEC",
+    "FACTOR_CANONICAL_COLUMNS",
+    "FACTOR_REQUIRED_LABELS",
+    "FactorDataError",
+    "align_factor_dates_with_returns",
+    "build_canonical_factor_dataset",
+    "compute_file_sha256",
+    "download_factor_archives",
+    "load_canonical_factor_dataset",
+    "validate_canonical_factor_frame",
+    "write_factor_validation_artifacts",
+]

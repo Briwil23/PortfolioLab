@@ -1,0 +1,30 @@
+{
+  "provider": "Kenneth R. French Data Library",
+  "factor_definitions": {
+    "MKT_RF": "Excess market return from the Fama/French U.S. daily factor file.",
+    "SMB": "Small minus big.",
+    "HML": "High minus low.",
+    "RMW": "Robust minus weak.",
+    "CMA": "Conservative minus aggressive.",
+    "MOM": "Momentum factor from the separate U.S. daily momentum file.",
+    "RF": "One-month Treasury bill rate."
+  },
+  "source_units": "percent",
+  "canonical_units": "decimal",
+  "date_convention": "daily trading dates in ISO YYYY-MM-DD after canonical conversion",
+  "parser_behavior": {
+    "header_detection": "explicit match on the expected daily header row",
+    "footer_termination": "stop at the first copyright/footer line after data begins",
+    "sentinel_handling": "reject any observed sentinel token rather than preserve it",
+    "fill_behavior": "none",
+    "order_dependence": "none; validation is name-based"
+  },
+  "missing_sentinel_behavior_observed": {
+    "Fama/French 5 Factors [Daily]": "No sentinel values observed in the parsed daily archive.",
+    "Momentum Factor (Mom) [Daily]": "No sentinel values observed in the parsed daily archive."
+  },
+  "factor_geography": "US",
+  "momentum_source": "separate daily series",
+  "known_multi_asset_limitation": "Equity factors are intentionally incomplete for the multi-asset PortfolioLab sleeve.",
+  "optional_validation_source": null
+}

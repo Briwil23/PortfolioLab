@@ -1,0 +1,32 @@
+{
+  "canonical_factor_hash": "4d402ebf191167dc4af45dd5ccc0525453354c4759e2485891840a1780386c94",
+  "m4_preservation_pass": true,
+  "matched_sample_start": "2018-02-01",
+  "matched_sample_end": "2026-06-30",
+  "matched_observation_count": 2113,
+  "strategy_count": 7,
+  "rolling_model": "FF5_MOM",
+  "primary_window": 252,
+  "secondary_window": 504,
+  "actual_252_row_count": 13034,
+  "actual_504_row_count": 11270,
+  "expected_252_row_count": 13034,
+  "expected_504_row_count": 11270,
+  "stress_date_contracts": {
+    "COVID": {
+      "start": "2020-02-20",
+      "end": "2020-04-30"
+    },
+    "2022_RATE_HIKE": {
+      "start": "2022-01-03",
+      "end": "2022-10-31"
+    }
+  },
+  "pre_stress_anti_lookahead_status": "validated",
+  "attribution_identity_max_error": 6.938893903907228e-18,
+  "deterministic_rerun_max_difference": 0.0,
+  "phase4_hashes_preserved": true,
+  "no_live_download_status": true,
+  "no_optimizer_change_status": true,
+  "empirical_phase_status": "validated"
+}
