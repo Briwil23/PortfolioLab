@@ -40,7 +40,7 @@ Supported modes:
 
 ## Factor Data Provenance and Publication Policy
 
-PortfolioLab's Milestone 5 factor pipeline uses daily Fama/French factor data from the Kenneth R. French Data Library. The repository records the official source entries and the exact transformation path in `src/factors/data.py`, `data/canonical_factors/factor_manifest.json`, and `data/canonical_factors/source_metadata.json`.
+PortfolioLab's Milestone 5 factor pipeline uses daily Fama/French factor data from the Kenneth R. French Data Library. The repository records the official source entries and the exact transformation path in [src/factors/data.py](src/factors/data.py), [data/canonical_factors/factor_manifest.json](data/canonical_factors/factor_manifest.json), and [data/canonical_factors/source_metadata.json](data/canonical_factors/source_metadata.json).
 
 ### Provider and sources
 
@@ -57,13 +57,23 @@ These are the source inputs referenced by the canonical build logic in `src/fact
 
 ### Publication policy
 
-The public repository intentionally excludes the raw archives and the reconstructed `data/canonical_factors/canonical_factors_daily.csv` under a conservative redistribution policy. Explicit redistribution permission for the underlying third-party factor files was not established in the repository metadata, and the project therefore avoids redistributing those files while retaining provenance, hash, and build metadata in the public repo.
+PORTFOLIOLAB M5 FACTOR DATA POLICY
+
+1. The M5 empirical study remains tied to the frozen canonical factor snapshot used during certification.
+2. The frozen canonical snapshot is identified by the date range 1963-07-01 through 2026-06-30, row count 15854, schema `date, MKT_RF, SMB, HML, RMW, CMA, MOM, RF`, canonical SHA256 `4d402ebf191167dc4af45dd5ccc0525453354c4759e2485891840a1780386c94`, and the source provenance metadata stored in [data/canonical_factors/factor_manifest.json](data/canonical_factors/factor_manifest.json) and [data/canonical_factors/source_metadata.json](data/canonical_factors/source_metadata.json).
+3. The public repository does not redistribute the original downloaded Kenneth French archives.
+4. The public repository does not redistribute the frozen reconstructed canonical factor CSV.
+5. The repository does publish acquisition and build code, provider/source metadata, frozen hashes, transformation methodology, tests, and derived research outputs.
+6. Kenneth French source archives are rolling upstream datasets and may change after a PortfolioLab research snapshot is frozen.
+7. Current upstream archives can therefore reproduce the pipeline and transformation methodology, but they are not guaranteed to reproduce a previously frozen canonical snapshot byte-for-byte.
+8. Exact reproduction of the certified M5 empirical outputs requires the exact frozen factor snapshot identified by the committed provenance record.
+9. The frozen M5 results remain historical research artifacts and must not be silently recomputed against revised upstream factor history.
 
 This is not a claim that the data are illegal to use; it is a conservative publication decision to avoid distributing source files whose redistribution rights are not explicitly established.
 
 ### Canonical construction workflow
 
-The canonical factor dataset is built using the repository's supported Python API in `src/factors/data.py`:
+The canonical factor dataset is built using the repository's supported Python API in [src/factors/data.py](src/factors/data.py):
 
 ```python
 from src.factors.data import build_canonical_factor_dataset
@@ -82,7 +92,17 @@ This function does the following:
 8. normalize the canonical factor columns to `date`, `MKT_RF`, `SMB`, `HML`, `RMW`, `CMA`, `MOM`, and `RF`
 9. validate the final schema and hash integrity against the manifest
 
-These steps are implemented in `build_canonical_factor_dataset(...)` and `validate_canonical_factor_directory(...)` in `src/factors/data.py`.
+These steps are implemented in `build_canonical_factor_dataset(...)` and `validate_canonical_factor_directory(...)` in [src/factors/data.py](src/factors/data.py).
+
+### Reproducibility terminology
+
+Pipeline reproducibility means the public code can reacquire the current official factor sources and execute the documented transformations, validations, merging, and schema construction.
+
+Snapshot reproducibility means the ability to reconstruct the exact historical canonical bytes and SHA256 used for the certified M5 experiment.
+
+Pipeline reproducibility remains available. Snapshot reproducibility is tied to the frozen provenance record and is not guaranteed from current upstream archives alone. The committed canonical hash identifies the frozen research vintage.
+
+A clean-source provenance comparison found that current official Kenneth R. French archives extend beyond the frozen cutoff and also contain historical revisions inside the overlap window, so applying the cutoff restores the frozen row and date dimensions but does not restore the frozen canonical SHA256.
 
 ### Provenance and hash validation
 
@@ -97,6 +117,15 @@ Their roles are:
 - `source_metadata.json`: stores the provider, factor definitions, units, date convention, parser behavior, and validation notes used to explain the transformed canonical dataset.
 
 The code validates that the locally present canonical file matches the expected hash and that each raw archive still matches its recorded raw hash before accepting the factor directory as valid.
+
+The frozen contract is:
+
+- date range: 1963-07-01 through 2026-06-30
+- rows: 15854
+- columns: `date, MKT_RF, SMB, HML, RMW, CMA, MOM, RF`
+- canonical SHA256: `4d402ebf191167dc4af45dd5ccc0525453354c4759e2485891840a1780386c94`
+
+Later official-source vintages were observed to differ historically from that frozen research snapshot.
 
 ### M5 test dependency
 

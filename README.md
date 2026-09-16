@@ -167,9 +167,11 @@ pip install -r requirements.txt
 
 ### Factor-data note (Milestone 5)
 
-The repository does not redistribute the official Fama/French Daily source archives or the reconstructed canonical factor CSV. Milestone 5 depends on the official Kenneth R. French Data Library inputs and the canonical build logic implemented in [src/factors/data.py](src/factors/data.py).
+Milestone 5 uses a frozen, hash-certified factor snapshot. The public code documents and reproduces the acquisition and transformation pipeline in [src/factors/data.py](src/factors/data.py), but current Kenneth R. French archives may not reproduce the certified snapshot byte-for-byte because the upstream factor series can be revised over time.
 
-The supported acquisition/build interface is the Python API exposed by `build_canonical_factor_dataset(...)` in [src/factors/data.py](src/factors/data.py). No public one-command factor build script is currently provided. The canonical provenance and hash metadata live in [data/canonical_factors/factor_manifest.json](data/canonical_factors/factor_manifest.json) and [data/canonical_factors/source_metadata.json](data/canonical_factors/source_metadata.json).
+The repository does not redistribute the official Fama/French Daily source archives or the reconstructed canonical factor CSV. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the exact provenance contract, including the frozen date range, row count, schema, and SHA256.
+
+The supported acquisition/build interface is the Python API exposed by `build_canonical_factor_dataset(...)` in [src/factors/data.py](src/factors/data.py). No public one-command factor build script is currently provided.
 
 ```python
 from src.factors.data import build_canonical_factor_dataset
