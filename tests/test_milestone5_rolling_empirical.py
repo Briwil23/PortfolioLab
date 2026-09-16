@@ -6,6 +6,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
+pytestmark = pytest.mark.frozen_snapshot
+
 from src.factors.phase5_empirical import _aligned_factor_sample
 from src.factors.rolling import ROLLING_FACTOR_LABELS, compute_rolling_factor_regressions
 

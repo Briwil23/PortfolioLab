@@ -182,13 +182,35 @@ This is the supported path for constructing the daily canonical factor dataset u
 
 ### Validation
 
-After the official source archives are acquired and the canonical factor dataset is constructed, the repository validation flow is:
+PortfolioLab distinguishes between public/core validation and historical frozen-snapshot certification.
+
+Public/core validation (does not require the excluded frozen M5 canonical factor snapshot):
+
+```bash
+python -m pytest -m "not frozen_snapshot" -q
+```
+
+Historical frozen-snapshot certification (requires the exact locally supplied M5 snapshot):
+
+```bash
+python -m pytest -m frozen_snapshot -q
+```
+
+Full local certification when the exact frozen snapshot is present:
 
 ```bash
 python -m pytest tests/ -q
 ```
 
-This full-suite check includes the M5-dependent tests, which require the canonical factor dataset. The rest of the repository is not presented as requiring factor acquisition when it does not; the factor-data requirement is specific to the Milestone 5 factor-analysis path.
+The public repository intentionally does not redistribute the exact frozen M5 canonical factor CSV or the raw Kenneth R. French archives. The factor-data requirement is therefore specific to the Milestone 5 factor-analysis path and is explicitly separated from the public/core test path.
+
+Preflight capability check:
+
+```bash
+python -m src.reproducibility.preflight
+```
+
+This reports whether the current environment supports public validation, frozen M5 snapshot validation, and full local certification without downloading anything or modifying canonical outputs.
 
 For milestone-specific canonical execution on the non-factor side of the project, the repository also includes explicit entry points such as:
 

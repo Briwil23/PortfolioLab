@@ -7,6 +7,8 @@ from zipfile import ZipFile
 import pandas as pd
 import pytest
 
+pytestmark = pytest.mark.frozen_snapshot
+
 from src.factors.data import (
     CANONICAL_FACTORS_FILE,
     CANONICAL_FACTORS_MANIFEST_FILE,

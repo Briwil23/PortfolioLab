@@ -139,6 +139,41 @@ The following tests require the canonical factor dataset to exist and be validat
 
 These are M5-specific factor-analysis tests. They are not representative of the entire repository. The rest of PortfolioLab does not require the factor-data acquisition/build step unless the relevant M5 workflow is being exercised.
 
+## Public/core vs frozen-snapshot certification
+
+PortfolioLab separates the repository's public validation path from the historical certified Milestone 5 snapshot path.
+
+Public/core validation:
+
+```bash
+python -m pytest -m "not frozen_snapshot" -q
+```
+
+Historical frozen-snapshot certification:
+
+```bash
+python -m pytest -m frozen_snapshot -q
+```
+
+Full local certification when the exact frozen snapshot is available:
+
+```bash
+python -m pytest tests/ -q
+```
+
+Preflight capability check:
+
+```bash
+python -m src.reproducibility.preflight
+```
+
+Behavior:
+
+- If the exact frozen M5 snapshot is absent or intentionally unavailable in a public clone, `frozen_snapshot` tests are skipped with an explicit reason instead of failing generically.
+- If the snapshot is present but invalid/corrupt, the loader fails closed and the tests do not silently masquerade as absent.
+- The public/core path remains meaningful for clean clones without claiming historical M5 certification.
+- Current upstream Kenneth R. French data is not treated as a substitute for the exact historical frozen M5 dataset.
+
 ## Environment Manifest
 
 `results/reproducibility/environment_manifest.json` captures versions of key

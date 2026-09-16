@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 import pytest
 
+pytestmark = pytest.mark.frozen_snapshot
+
 from src.data.market_data import compute_file_sha256
 from src.factors.data import load_canonical_factor_dataset
 from src.factors.models import FACTOR_MODEL_REGISTRY, get_model_factor_labels
@@ -17,6 +19,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL_DIR = ROOT / "data" / "canonical_factors"
 M4_GROSS = ROOT / "results" / "milestone4_canonical" / "walk_forward_returns_gross.csv"
 OUT_DIR = ROOT / "results" / "milestone5_canonical"
+
+
+def _tmp_static_dir(tmp_path: Path) -> Path:
+    output_dir = tmp_path / "milestone5_static"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return output_dir
 
 
 def test_static_strategy_and_model_inclusion():
@@ -38,8 +46,9 @@ def test_static_strategy_and_model_inclusion():
     }
 
 
-def test_static_regressions_count_and_sample_contract():
-    result = run_static_factor_attribution(OUT_DIR)
+def test_static_regressions_count_and_sample_contract(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    result = run_static_factor_attribution(output_dir)
     static = result["static_regressions"]
     assert len(static) == 28
     assert (static["n_obs"] == 2113).all()
@@ -63,8 +72,9 @@ def test_static_alignment_and_hash_validation():
     assert compute_file_sha256(CANONICAL_DIR / "canonical_factors_daily.csv") == manifest["canonical_sha256"]
 
 
-def test_rf_and_hac_rules_and_annualization():
-    result = run_static_factor_attribution(OUT_DIR)
+def test_rf_and_hac_rules_and_annualization(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    result = run_static_factor_attribution(output_dir)
     static = result["static_regressions"]
     assert (static["alpha_annualized"] == 252.0 * static["alpha_daily"]).all()
     assert static["alpha_raw_pvalue"].between(0, 1).all()
@@ -81,8 +91,9 @@ def test_rf_and_hac_rules_and_annualization():
     assert static["alpha_hac_se"].notna().all()
 
 
-def test_bh_and_coefficients_output():
-    result = run_static_factor_attribution(OUT_DIR)
+def test_bh_and_coefficients_output(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    result = run_static_factor_attribution(output_dir)
     alpha_summary = result["alpha_summary"]
     coeffs = result["factor_coefficients"]
     for model in MODELS:
@@ -102,8 +113,9 @@ def test_bh_and_coefficients_output():
             assert subset["coefficient"].notna().all()
 
 
-def test_diagnostics_and_factor_correlations():
-    result = run_static_factor_attribution(OUT_DIR)
+def test_diagnostics_and_factor_correlations(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    result = run_static_factor_attribution(output_dir)
     corr = result["factor_correlations"]
     assert list(corr.columns) == ["MKT_RF", "SMB", "HML", "RMW", "CMA", "MOM"]
     assert set(corr.index) == {"MKT_RF", "SMB", "HML", "RMW", "CMA", "MOM"}
@@ -115,8 +127,9 @@ def test_diagnostics_and_factor_correlations():
     assert diag["vif_mean"].notna().any()
 
 
-def test_static_verification_and_hashes():
-    result = run_static_factor_attribution(OUT_DIR)
+def test_static_verification_and_hashes(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    result = run_static_factor_attribution(output_dir)
     verification = result["verification"]
     required = {
         "canonical_factor_hash_valid",
@@ -147,9 +160,10 @@ def test_static_verification_and_hashes():
     assert verification["m4_preservation_max_difference"] <= 1e-12
 
 
-def test_deterministic_rerun_and_static_outputs():
-    first = run_static_factor_attribution(OUT_DIR)
-    hashes_1 = {name: compute_file_sha256(OUT_DIR / name) for name in [
+def test_deterministic_rerun_and_static_outputs(tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
+    first = run_static_factor_attribution(output_dir)
+    hashes_1 = {name: compute_file_sha256(output_dir / name) for name in [
         "static_factor_regressions.csv",
         "factor_coefficients.csv",
         "alpha_summary.csv",
@@ -157,21 +171,22 @@ def test_deterministic_rerun_and_static_outputs():
         "factor_correlations.csv",
         "residual_diagnostics.csv",
     ]}
-    second = run_static_factor_attribution(OUT_DIR)
-    hashes_2 = {name: compute_file_sha256(OUT_DIR / name) for name in hashes_1}
+    second = run_static_factor_attribution(output_dir)
+    hashes_2 = {name: compute_file_sha256(output_dir / name) for name in hashes_1}
     assert hashes_1 == hashes_2
     assert first["verification"]["static_output_hashes"] == hashes_1
     assert second["verification"]["static_output_hashes"] == hashes_2
 
 
-def test_no_live_download_and_no_optimizer_call_status(monkeypatch):
+def test_no_live_download_and_no_optimizer_call_status(monkeypatch, tmp_path):
+    output_dir = _tmp_static_dir(tmp_path)
     import src.optimization.risk_based as risk_based
 
     def forbidden(*args, **kwargs):
         raise AssertionError("Optimizer should not be called during static attribution")
 
     monkeypatch.setattr(risk_based, "equal_risk_contribution_portfolio", forbidden)
-    result = run_static_factor_attribution(OUT_DIR)
+    result = run_static_factor_attribution(output_dir)
     assert result["verification"]["no_optimizer_call_status"] is True
     assert result["verification"]["no_live_call_status"] is True
 

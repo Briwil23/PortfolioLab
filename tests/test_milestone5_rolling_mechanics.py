@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 import pytest
 
+pytestmark = pytest.mark.frozen_snapshot
+
 from src.data.market_data import compute_file_sha256
 from src.factors.data import load_canonical_factor_dataset
 from src.factors.rolling import (

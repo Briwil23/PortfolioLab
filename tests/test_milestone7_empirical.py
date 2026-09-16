@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -11,9 +10,6 @@ from src.backtesting.milestone7_empirical import run_milestone7_canonical_empiri
 from src.risk.tail_metrics import empirical_cvar, empirical_var
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "results" / "milestone7_canonical"
-RUN2_DIR = ROOT / "results" / "milestone7_validation" / "canonical_empirical_run2"
-
 REQUIRED_OUTPUTS = [
     "walk_forward_returns.csv",
     "walk_forward_weights.csv",
@@ -43,13 +39,14 @@ REQUIRED_OUTPUTS = [
 ]
 
 
-@lru_cache(maxsize=1)
-def _run_replicates() -> dict:
-    return run_milestone7_canonical_empirical_replicates(OUT_DIR, RUN2_DIR)
+def _run_replicates(output_dir: Path, run2_dir: Path) -> dict:
+    return run_milestone7_canonical_empirical_replicates(output_dir, run2_dir)
 
 
-def test_m7_empirical_artifacts_and_reproducibility():
-    bundle = _run_replicates()
+def test_m7_empirical_artifacts_and_reproducibility(tmp_path: Path):
+    output_dir = tmp_path / "milestone7_canonical"
+    run2_dir = tmp_path / "milestone7_validation" / "canonical_empirical_run2"
+    bundle = _run_replicates(output_dir, run2_dir)
     verification = bundle["verification"]
 
     assert verification["empirical_certification_status"] == "validated"
@@ -68,11 +65,11 @@ def test_m7_empirical_artifacts_and_reproducibility():
     assert all(flag is True for flag in verification["figure_validation"].values())
 
     for name in REQUIRED_OUTPUTS:
-        assert (OUT_DIR / name).exists(), name
+        assert (output_dir / name).exists(), name
         if name.endswith(".png"):
-            assert (OUT_DIR / name).stat().st_size > 0, name
+            assert (output_dir / name).stat().st_size > 0, name
 
-    payload = json.loads((OUT_DIR / "milestone7_empirical_verification.json").read_text(encoding="utf-8"))
+    payload = json.loads((output_dir / "milestone7_empirical_verification.json").read_text(encoding="utf-8"))
     required_keys = {
         "canonical_data_hash",
         "comparison_start",
@@ -106,16 +103,18 @@ def test_m7_empirical_artifacts_and_reproducibility():
     assert payload["stress_periods"]["2022"] == {"start": "2022-01-03", "end": "2022-10-31"}
 
 
-def test_m7_return_and_cost_identity_contracts():
-    _run_replicates()
+def test_m7_return_and_cost_identity_contracts(tmp_path: Path):
+    output_dir = tmp_path / "milestone7_canonical"
+    run2_dir = tmp_path / "milestone7_validation" / "canonical_empirical_run2"
+    _run_replicates(output_dir, run2_dir)
 
-    returns = pd.read_csv(OUT_DIR / "walk_forward_returns.csv")
-    weights = pd.read_csv(OUT_DIR / "walk_forward_weights.csv")
-    rebalance = pd.read_csv(OUT_DIR / "rebalance_history.csv")
-    optimizer = pd.read_csv(OUT_DIR / "optimizer_diagnostics.csv")
-    transaction = pd.read_csv(OUT_DIR / "transaction_cost_analysis.csv")
-    tail = pd.read_csv(OUT_DIR / "tail_risk_metrics.csv")
-    stress = pd.read_csv(OUT_DIR / "stress_analysis.csv")
+    returns = pd.read_csv(output_dir / "walk_forward_returns.csv")
+    weights = pd.read_csv(output_dir / "walk_forward_weights.csv")
+    rebalance = pd.read_csv(output_dir / "rebalance_history.csv")
+    optimizer = pd.read_csv(output_dir / "optimizer_diagnostics.csv")
+    transaction = pd.read_csv(output_dir / "transaction_cost_analysis.csv")
+    tail = pd.read_csv(output_dir / "tail_risk_metrics.csv")
+    stress = pd.read_csv(output_dir / "stress_analysis.csv")
 
     assert returns["date"].duplicated().sum() > 0
     assert returns[["gross_return", "net_return"]].replace([np.inf, -np.inf], np.nan).notna().all().all()
@@ -149,11 +148,13 @@ def test_m7_return_and_cost_identity_contracts():
     assert np.isfinite(empirical_cvar(losses, 0.95))
 
 
-def test_m7_empirical_date_contract_and_no_leaks():
-    _run_replicates()
+def test_m7_empirical_date_contract_and_no_leaks(tmp_path: Path):
+    output_dir = tmp_path / "milestone7_canonical"
+    run2_dir = tmp_path / "milestone7_validation" / "canonical_empirical_run2"
+    _run_replicates(output_dir, run2_dir)
 
-    gross = pd.read_csv(OUT_DIR / "portfolio_metrics_gross.csv")
-    net = pd.read_csv(OUT_DIR / "portfolio_metrics_net_10bps.csv")
+    gross = pd.read_csv(output_dir / "portfolio_metrics_gross.csv")
+    net = pd.read_csv(output_dir / "portfolio_metrics_net_10bps.csv")
     assert set(gross["strategy"]) == set(net["strategy"])
     assert gross["sample_start"].nunique() == 1
     assert gross["sample_end"].nunique() == 1
@@ -162,7 +163,7 @@ def test_m7_empirical_date_contract_and_no_leaks():
     assert gross["n_obs"].nunique() == 1
     assert gross["n_obs"].iloc[0] == 2158
 
-    stress = pd.read_csv(OUT_DIR / "stress_analysis.csv")
+    stress = pd.read_csv(output_dir / "stress_analysis.csv")
     assert set(stress["stress_period"]) == {"COVID", "2022"}
     assert stress.groupby("stress_period")["start"].nunique().to_dict() == {"COVID": 1, "2022": 1}
     assert stress.groupby("stress_period")["end"].nunique().to_dict() == {"COVID": 1, "2022": 1}

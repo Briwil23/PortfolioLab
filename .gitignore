@@ -34,3 +34,12 @@ config/secrets.yaml
 *.key
 *.pem
 
+# Public publication hygiene: local-only frozen-validation evidence and generated validation output
+# Keep public provenance metadata trackable
+# NOTE: do not ignore the parent directory data/canonical_factors/
+data/canonical_factors/canonical_factors_daily.csv
+data/canonical_factors/raw/
+results/milestone5_validation/
+results/milestone7_validation/
+results/backtest/HISTORICAL_LIVE_DATA_NOTE.txt
+

@@ -7,6 +7,8 @@ import pandas as pd
 import pytest
 import statsmodels.api as sm
 
+pytestmark = pytest.mark.frozen_snapshot
+
 from src.factors.data import load_canonical_factor_dataset
 from src.factors.models import FACTOR_MODEL_REGISTRY, get_model_factor_labels, validate_model_spec
 from src.factors.regression import (
