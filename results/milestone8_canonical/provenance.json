@@ -1,0 +1,93 @@
+{
+  "frozen_factor_snapshot_required": false,
+  "public_repository_compatible": true,
+  "source_artifact_hashes": {
+    "results/milestone3_canonical/concentration_analysis.csv": "ef32cbfe3a206c402d4fa7caf3b4a0465b4c6306c0d5048a75cf1066a42b2913",
+    "results/milestone4_canonical/stress_period_analysis.csv": "15ed0e9caaa492120836a112ae79102339f813726834a20adb2e25324e512d86",
+    "results/milestone5_canonical/rolling_exposure_summary.csv": "6d606c6321d17e94a0d8f284c4a9b5a835c52531cb138f01d71a93f2c6cc653f",
+    "results/milestone7_canonical/portfolio_metrics_gross.csv": "55487f46e28aa877cdd6311229e4af912b8f5c65aa226479b2bc9320c05cfe94",
+    "results/milestone7_canonical/portfolio_metrics_net_10bps.csv": "7500c693add0bda616083d492c27b566f001893bb1cc88045ea2eef768855f16",
+    "results/milestone7_canonical/stress_analysis.csv": "62b015e4b493f06ffcdfd82774e12beb401c70630133909e99bb5a270eaab93b",
+    "results/milestone7_canonical/turnover_analysis.csv": "40abf3054b8205b2f868e9c1f6b2832992697b038d34396c736b53f3dda8490b"
+  },
+  "source_milestones": [
+    "M3",
+    "M4",
+    "M5",
+    "M7"
+  ],
+  "source_registry": [
+    {
+      "classification": "DIRECT",
+      "comparison_scope": "gross OOS portfolio performance, strategy-level comparison",
+      "field": "annualized_return",
+      "limitations": "Gross-only comparison; net and factor evidence are isolated in separate outputs.",
+      "m8_output": "strategy_comparison.csv",
+      "source_artifact": "results/milestone7_canonical/portfolio_metrics_gross.csv",
+      "source_field": "annualized_return",
+      "source_milestone": "M7"
+    },
+    {
+      "classification": "DERIVED",
+      "comparison_scope": "gross vs net execution cost drag",
+      "field": "return_cost_drag",
+      "formula": "annualized_return_gross - annualized_return_net_10bps",
+      "limitations": "Cost drag is derived from the certified net-of-cost comparison only.",
+      "m8_output": "tradeoff_summary.csv",
+      "source_artifact": "results/milestone7_canonical/portfolio_metrics_gross.csv + results/milestone7_canonical/portfolio_metrics_net_10bps.csv",
+      "source_field": "annualized_return",
+      "source_milestone": "M7"
+    },
+    {
+      "classification": "DERIVED",
+      "comparison_scope": "gross vs net risk-adjusted performance cost drag",
+      "field": "sharpe_cost_drag",
+      "formula": "sharpe_gross - sharpe_net_10bps",
+      "limitations": "Derived from the certified net-of-cost Sharpe comparison.",
+      "m8_output": "tradeoff_summary.csv",
+      "source_artifact": "results/milestone7_canonical/portfolio_metrics_gross.csv + results/milestone7_canonical/portfolio_metrics_net_10bps.csv",
+      "source_field": "sharpe",
+      "source_milestone": "M7"
+    },
+    {
+      "classification": "DIRECT",
+      "comparison_scope": "COVID stress window only",
+      "field": "COVID_cumulative_return",
+      "limitations": "Stress-window evidence is not a full-sample performance score.",
+      "m8_output": "personality_features.csv",
+      "source_artifact": "results/milestone7_canonical/stress_analysis.csv",
+      "source_field": "cumulative_return",
+      "source_milestone": "M7"
+    },
+    {
+      "classification": "DIRECT",
+      "comparison_scope": "2022 stress window only",
+      "field": "2022_cumulative_return",
+      "limitations": "Stress-window evidence is not a full-sample performance score.",
+      "m8_output": "personality_features.csv",
+      "source_artifact": "results/milestone7_canonical/stress_analysis.csv",
+      "source_field": "cumulative_return",
+      "source_milestone": "M7"
+    },
+    {
+      "classification": "CONTEXTUAL",
+      "comparison_scope": "portfolio concentration context only",
+      "field": "mean_hhi",
+      "limitations": "Supplemental only; not merged into M7 primary performance metrics.",
+      "m8_output": "supplemental_evidence.csv",
+      "source_artifact": "results/milestone3_canonical/concentration_analysis.csv",
+      "source_field": "mean_hhi",
+      "source_milestone": "M3"
+    },
+    {
+      "classification": "CONTEXTUAL",
+      "comparison_scope": "factor-exposure explanatory evidence only",
+      "field": "mean",
+      "limitations": "Explanatory M5 evidence remains separate from primary strategy performance metrics.",
+      "m8_output": "supplemental_evidence.csv",
+      "source_artifact": "results/milestone5_canonical/rolling_exposure_summary.csv",
+      "source_field": "mean",
+      "source_milestone": "M5"
+    }
+  ]
+}

@@ -6,11 +6,11 @@ Quantitative Portfolio Research · Optimization · Factor Attribution · Tail Ri
 
 PortfolioLab is a financial-engineering research system for portfolio optimization, factor attribution, downside-risk measurement, and empirical validation. It is designed to be credible to recruiters, quantitative researchers, and software engineers because the code and the evidence are tied to a strict canonical-data contract and to repeatable verification artifacts rather than a single polished narrative.
 
-[Research](#research-highlights) · [Source](src) · [M7 Report](results/milestone7_canonical/MILESTONE_7_RESEARCH_REPORT.md) · [Reproducibility](REPRODUCIBILITY.md)
+[Research](#research-highlights) · [Source](src) · [M7 Report](results/milestone7_canonical/MILESTONE_7_RESEARCH_REPORT.md) · [M8 Report](results/milestone8_canonical/MILESTONE_8_RESEARCH_REPORT.md) · [Reproducibility](REPRODUCIBILITY.md)
 
-![Risk-return-tail tradeoff for the eight-strategy benchmark set](results/milestone7_canonical/figures/11_risk_return_tail_map.png)
+![M8 risk-return frontier for the certified eight-strategy comparison set](results/milestone8_canonical/figures/01_return_vs_volatility.png)
 
-*Figure: M7 risk-return-tail map on the frozen canonical sample. Minimum CVaR appears as a defensively oriented optimizer: strong drawdown control, but not a universal winner on realized tail loss or total return.*
+*Figure: M8 risk-return frontier on the certified eight-strategy comparison set. SPY delivered the highest observed annualized return, while the Combined Robust Max Sharpe λ=0.50 γ=0.10 strategy delivered the strongest observed Sharpe and Sortino.*
 
 ## Research Highlights
 
@@ -20,6 +20,14 @@ PortfolioLab is a financial-engineering research system for portfolio optimizati
 4. M4 robust optimization showed a meaningful risk-adjusted result: Combined Robust Max Sharpe reached a canonical gross Sharpe of approximately 0.706 versus approximately 0.585 for classical Maximum Sharpe, while keeping turnover materially lower.
 
 The strongest takeaway is not universal superiority. The evidence supports a more disciplined message: PortfolioLab investigates where optimization behaves well, where it breaks down, and which design choices trade growth, risk, and implementation realism against one another.
+
+### M8 research synthesis
+
+M8 is a certified cross-strategy synthesis of the validated PortfolioLab evidence across return, volatility, risk-adjusted performance, drawdown, tail risk, turnover, transaction costs, stress behavior, robustness, and factor context. It does not introduce a new optimizer or a new empirical strategy set; it consolidates the certified evidence already established in the previous milestones into a single public-facing synthesis.
+
+The core M8 conclusion is that portfolio construction is a multi-objective trade-off rather than a single-strategy ranking: SPY produced the highest observed annualized return at 14.0891%, the Combined Robust Max Sharpe λ=0.50 γ=0.10 strategy produced the strongest observed Sharpe and Sortino at 0.705538 and 0.684938, Minimum CVaR produced the shallowest full-period maximum drawdown at -21.2206%, and Minimum Variance produced the lowest realized 95% VaR and 95% CVaR at 0.7798% and 1.1489%. The evidence also shows that the optimization objective and the subsequently realized out-of-sample tail-loss outcome are not identical: Minimum CVaR did not produce the lowest realized OOS 95% CVaR, while Minimum Variance was slightly lower in the certified sample.
+
+This framing is intentionally evidence-first: M8 identifies portfolio personalities and trade-offs rather than a universal winner.
 
 ## What PortfolioLab Does
 
@@ -79,8 +87,8 @@ The strongest takeaway is not universal superiority. The evidence supports a mor
 | M6 / M6-T | TERM/CREDIT factor-extension branch | Blocked |
 | M7 | Minimum-CVaR and realized downside-risk research | Certified |
 | Repository Presentation Checkpoint | Current README and project presentation state | Current |
-| M8 | Cross-strategy synthesis | Future |
-| M9 | Interactive PortfolioLab analytics / dashboard layer | Future |
+| M8 | Cross-strategy synthesis across return, volatility, drawdown, tail risk, turnover, transaction costs, stress behavior, robustness, and factor context | CERTIFIED |
+| M9 | Interactive PortfolioLab analytics / dashboard layer | NEXT / FUTURE |
 
 M6 / M6-T remains blocked: an attempted TERM/CREDIT extension under the project’s locked canonical-data and reproducibility contract could not satisfy the required evidence standard, so the branch was intentionally not forced to completion.
 
@@ -132,6 +140,7 @@ Users who wish to reproduce the M5-specific factor pipeline should obtain the of
 
 ## Selected Research
 
+- [M8 Research Report](results/milestone8_canonical/MILESTONE_8_RESEARCH_REPORT.md) — certified cross-strategy synthesis of return, risk, stress behavior, cost drag, and factor context
 - [M7 Research Report](results/milestone7_canonical/MILESTONE_7_RESEARCH_REPORT.md) — flagship minimum-CVaR and downside-risk analysis
 - [M4 Research Report](results/milestone4_canonical/MILESTONE_4_REPORT.md) — risk-based allocation and turnover control
 - [M5 Canonical Factor Research](results/milestone5_canonical) — rolling factor exposures, stress attribution, and alpha diagnostics
@@ -227,7 +236,7 @@ These commands are supported by the repository structure and the canonical artif
 - M6 / M6-T: blocked research branch under the locked data and reproducibility contract
 - M7: certified minimum-CVaR research milestone
 - Repository Presentation Checkpoint: current
-- M8: future cross-strategy synthesis
-- M9: future interactive PortfolioLab analytics / dashboard layer
+- M8: CERTIFIED cross-strategy synthesis
+- M9: NEXT / FUTURE interactive PortfolioLab analytics / dashboard layer
 
 The project is not presented as a finished product in every dimension. It is presented as a serious quantitative-research codebase with a validated research core, explicit evidence standards, and a clear path for deeper synthesis and user-facing analytics.

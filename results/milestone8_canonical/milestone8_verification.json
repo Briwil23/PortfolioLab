@@ -1,0 +1,60 @@
+{
+  "deterministic": true,
+  "deterministic_max_difference": 0.0,
+  "frozen_factor_snapshot_required": false,
+  "generated_artifact_hashes": {
+    "personality_features.csv": "611ff7b3e08f02d8330270eb7ae946ecfd0d463656e06c9a27980c38682844d0",
+    "provenance.json": "2f58aceec52c4fcd71ea7c375bc566e6381fc97a7520e13ddbabecdef050c82a",
+    "strategy_comparison.csv": "1513ab36a0fcff222199d99e642b391bb5c0fc8f30c176fd675a5cbab2cfe885",
+    "supplemental_evidence.csv": "90dd7f7b1f07c487eebc5387b1d5c463ce5074c416991cd03d438da6dc3cdb52",
+    "tradeoff_summary.csv": "7d0bac28ac501138b4c4fd1f099168cd4bf61c67ad13be922f99a94d222fb35d"
+  },
+  "generation_timestamp": "2026-09-17T20:53:49Z",
+  "historical_empirical_values_changed": false,
+  "methodology_changed": false,
+  "milestone": "PortfolioLab",
+  "missing_required_values": [],
+  "nonfinite_required_values": [],
+  "phase": "M8",
+  "prior_canonical_mutations": {
+    "M3": 0,
+    "M4": 0,
+    "M5": 0,
+    "M7": 0
+  },
+  "public_repository_compatible": true,
+  "return_cost_drag_max_error": 0.0,
+  "sharpe_cost_drag_max_error": 0.0,
+  "source_HEAD": "9be7adef86c728fce5c5caaecdbbb8c2e8d60bbb",
+  "source_artifact_hashes": {
+    "results/milestone3_canonical/concentration_analysis.csv": "ef32cbfe3a206c402d4fa7caf3b4a0465b4c6306c0d5048a75cf1066a42b2913",
+    "results/milestone4_canonical/stress_period_analysis.csv": "15ed0e9caaa492120836a112ae79102339f813726834a20adb2e25324e512d86",
+    "results/milestone5_canonical/rolling_exposure_summary.csv": "6d606c6321d17e94a0d8f284c4a9b5a835c52531cb138f01d71a93f2c6cc653f",
+    "results/milestone7_canonical/portfolio_metrics_gross.csv": "55487f46e28aa877cdd6311229e4af912b8f5c65aa226479b2bc9320c05cfe94",
+    "results/milestone7_canonical/portfolio_metrics_net_10bps.csv": "7500c693add0bda616083d492c27b566f001893bb1cc88045ea2eef768855f16",
+    "results/milestone7_canonical/stress_analysis.csv": "62b015e4b493f06ffcdfd82774e12beb401c70630133909e99bb5a270eaab93b",
+    "results/milestone7_canonical/turnover_analysis.csv": "40abf3054b8205b2f868e9c1f6b2832992697b038d34396c736b53f3dda8490b"
+  },
+  "source_artifacts": [
+    "results/milestone3_canonical/concentration_analysis.csv",
+    "results/milestone4_canonical/stress_period_analysis.csv",
+    "results/milestone5_canonical/rolling_exposure_summary.csv",
+    "results/milestone7_canonical/portfolio_metrics_gross.csv",
+    "results/milestone7_canonical/portfolio_metrics_net_10bps.csv",
+    "results/milestone7_canonical/stress_analysis.csv",
+    "results/milestone7_canonical/turnover_analysis.csv"
+  ],
+  "source_tree_SHA": "19ec0704e5ee95306ef8306be108fcd2c7792359",
+  "strategy_count": 8,
+  "strategy_names": [
+    "Minimum CVaR",
+    "SPY",
+    "Equal Weight",
+    "Minimum Variance",
+    "Maximum Sharpe",
+    "Combined Robust Max Sharpe \u03bb=0.50 \u03b3=0.10",
+    "Inverse Volatility",
+    "Equal Risk Contribution"
+  ],
+  "subjective_rankings_created": false
+}
